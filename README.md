@@ -6,14 +6,11 @@ For additional information, kindly drop by the website. Your visit would be grea
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [About Me](#aboutme)
+- [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Experience](#experience)
-- [Portfolio](#portfolio)
-- [Achievements](#achievements)
-- [Creative Endeavors](#creations)
-- [Connect with Me](#contact)
-- [Download Resume](#resume)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributions](#contributions)
 - [License](#license)
 
 ## Introduction
