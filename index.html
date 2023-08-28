@@ -5,79 +5,14 @@
   <title>Prathamesh Surve</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="images/sunnysurvewbwithcorners.png" type="image/x-icon"/>
+  <link rel="icon" href="images/webpageicon.png" type="image/x-icon"/>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body,
-    h1,
-    h2,                         
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Lato", sans-serif;
-    }
-
-    body,
-    html {
-      height: 100%;
-      color: #777;
-      line-height: 1.8;
-    }
-
-    /* Create a Parallax Effect */
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    /* First image (Logo. Full height) */
-    .bgimg-1 {
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('images/DigitalNet-4.jpg');
-      min-height: 100%;
-    }
-
-    /* Second image (Portfolio) */
-    .bgimg-2 {
-      background-image: url("images/banner1.jpg");
-      min-height: 400px;
-    }
-
-    /* Third image (Contact) */
-    .bgimg-3 {
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url("images/bwdaek2.jpg");
-      min-height: 400px;
-    }
-
-    .w3-wide {
-      letter-spacing: 10px;
-    }
-
-    .w3-hover-opacity {
-      cursor: pointer;
-    }
-
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1600px) {
-
-      .bgimg-1,
-      .bgimg-2,
-      .bgimg-3 {
-        background-attachment: scroll;
-        min-height: 400px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar" id="myNavbar">
@@ -89,7 +24,7 @@
       <a href="#about" style="color:rgb(0, 0, 0);" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
       <a href="#portfolio" style="color:rgb(0, 0, 0);" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
       <a href="#contact" style="color:rgb(0, 0, 0);" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-      <a href="mailto:prathamsurve101@gmail.com"  style="color:rgb(0, 0, 0);" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <a href="mailto:prathamsurve101@gmail.com" style="color:rgb(0, 0, 0);" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
         <i class="fa fa-envelope"></i>
       </a>
     </div>
@@ -105,9 +40,12 @@
 
   <!-- First Parallax Image with Logo Text -->
   <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-middle" style="white-space:nowrap; color:Black;">Hey there! I'm <br/>
+    <div class="w3-display-middle" style="white-space:nowrap; color:Black; font-size: 150%;">Hey there! I'm <br/>
       <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Prathamesh <span
           class="w3-hide-small">Sanjay </span>Surve</span>
+          <div class="w3-center w3-xlarge w3-input gradient-text">
+            <span id="text"></span><span id="cursor">|</span>
+          </div>
     </div>
   </div>
 
@@ -115,31 +53,37 @@
   <div class="w3-content w3-container w3-padding-64" id="about">
     <h3 class="w3-center">ABOUT ME</h3>
     <p class="w3-center"><em>I love Coding!</em></p>
-    <p>Hello! I'm Prathamesh Sanjay Surve, a passionate and dedicated software developer with a keen eye for
-       innovative solutions. With a background in computer science and Engineering, I thrive on turning complex 
-       challenges into elegant, functional code. I have a 
-       deep love for problem-solving and enjoy collaborating with teams to create impactful software that 
-       meets both user needs and business goals. Whether it's crafting a seamless user experience, optimizing 
-       code performance, or diving into new technologies, I'm always eager to expand my skill set and stay 
-       up-to-date with the ever-evolving tech landscape. Beyond the keyboard, I'm an avid learner, an 
-       enthusiastic Photographer/ Videographer/ Editor, and a firm believer in the power of teamwork and continuous growth. 
-       Let's connect and embark on this exciting journey of coding excellence together!"
+    <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello! 
+      I'm Prathamesh Sanjay Surve, a passionate and dedicated 23-year-old software developer with 
+      a keen eye for innovative solutions. With a background in Computer Engineering and a Bachelor's degree 
+      with a stellar 7.98 CGPA, earned in 2023, I thrive on turning complex challenges into elegant, functional 
+      code. Hailing from Satara, Maharashtra, India, I am fluent in my native language Marathi, and also proficient 
+      in Hindi and English.
 
-      Feel free to personalize this paragraph with your own experiences, skills, and hobbies to make it truly 
-      reflect your personality and professional identity.</p>
+      I have a deep love for problem-solving and enjoy collaborating with teams to create impactful software that 
+      meets both user needs and business goals. My journey into the world of technology began with web development, 
+      where I gained valuable work experience as an intern. Additionally, I've honed my skills through certifications 
+      from platforms like Codecademy, Coursera, LinkedIn, Free Code Camp, and HackerRank.
+      </p>
     <div class="w3-row">
       <div class="w3-col m6 w3-center w3-padding-large">
         <p><b><i class="fa fa-user w3-margin-right"></i>Prathamesh Surve</b></p><br>
-        <img src="images/8uyh.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+        <img src="images/profile.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
           width="500" height="333">
       </div>
 
       <!-- Hide this text on small devices -->
       <div class="w3-col m6 w3-hide-small w3-padding-large">
-        <p>Welcome to my corner of the digital world! I'm Prathamesh Surve, a passionate software
-           engineer and a creative soul with a knack for photography and videography. With a strong
-           foundation in the realm of programming and technology, I embark on digital journeys that
-           fuse innovation with imagination. By day, I delve into the intricate realm of code, crafting
+        <p align="justify">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beyond the keyboard, I'm an avid learner,
+          an enthusiastic Photographer/Videographer/Editor, and a firm believer
+          in the power of teamwork and continuous growth. Whether it's crafting a seamless user experience, optimizing code 
+          performance, or diving into new technologies, I'm always eager to expand my skill set and stay up-to-date with 
+          the ever-evolving tech landscape.  With a strong foundation in the realm of programming and technology, I embark 
+          on digital journeys that fuse innovation with imagination. Let's connect and embark on this exciting journey of 
+          coding excellence together!
+          
+           <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By day, I delve into the intricate realm of code, crafting
            solutions that shape the digital landscape. By sunset, I transform into a pixel poet, 
            capturing moments through the lens and weaving visual stories that come to life through my
            expertise in Photoshop, photography, and videography. This space is a reflection of my dual life
@@ -149,7 +93,7 @@
       </div>
     </div>
     <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-    <p class="w3-wide"><i class="fa fa-camera"></i>Coding</p>
+    <p class="w3-wide"><i class="fa fa-th"></i>Coding</p>
     <div class="w3-light-grey">
       <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
     </div>
@@ -165,20 +109,20 @@
 
   <div class="w3-row w3-center w3-dark-grey w3-padding-16">
     <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">4+</span><br>
-      Partners
+      <span class="w3-xlarge">2.5+</span><br>
+      Years of Contribution
     </div>
     <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">5+</span><br>
-      Projects Done
+      <span class="w3-xlarge">210+</span><br>
+      Software and Digital Contents Delivered
     </div>
     <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">8+</span><br>
-      Happy Clients
+      <span class="w3-xlarge">15+</span><br>
+      Known Technologies
     </div>
     <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">50+</span><br>
-      Meetings
+      <span class="w3-xlarge">10+</span><br>
+      Programming Certifications
     </div>
   </div>
 
@@ -189,54 +133,125 @@
     </div>
   </div>
 
-  <!-- Container (Portfolio Section) -->
-  <div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center">MY WORK</h3>
-    <p class="w3-center"><em>Here are a few images showcasing my latest creative projects.<br>You're welcome to click on the images to view them in a larger size and explore the details.</em></p><br>
+<!-- Container (Portfolio Section 1= My Achievements)-->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY ACHIEVEMENTS</h3>
+  <p class="w3-center"><em>Here are a few certificates showcasing my recent course accomplishments.</em></p><br>
 
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="images/Coursera_SystemAdministration&IT_Infra_Google_page-0001.jpg" style="width:100%" onclick="onClick(this)" 
+      class="w3-hover-opacity" alt="System Administration & IT Infrastructure Services by Google Certificate by Coursera">
+        System Administration & IT Infrastructure Services by 
+        <a href="https://coursera.org/share/2e6fef515d548a48b0a09cfde035f5d4" style="color:rgb(45, 132, 182); text-decoration:none;">Coursera</a> 
+    </div>
+    <div class="w3-col m3">
+      <img src="images/HackerRank_java_basic certificate_page-0001.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+        alt="Java (Basic) certificate by HackerRank">
+         Java (Basic) certificate by 
+      <a href="https://www.hackerrank.com/certificates/8253c1e69674" style="color:rgb(45, 132, 182); text-decoration:none;">HackerRank</a>
+    </div>
+    <div class="w3-col m3">
+      <img src="images/CertificateOfCompletion_Career Essentials in Software Development by Microsoft and LinkedIn_page-0001.jpg" 
+      style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" 
+      alt="Career Essentials in Software Development by Microsoft and LinkedIn">
+      Career Essentials in Software Development by Microsoft and 
+        <a href="https://www.linkedin.com/learning/certificates/f17d0287b1de22d1a7f6f83d1a3232f729c50d8aae6da205b82a8d317ce11076" 
+        style="color:rgb(45, 132, 182); text-decoration:none;">LinkedIn</a> 
+    </div> 
+    <div class="w3-col m3">
+      <img src="images/Coursera Technical Support Fundamentals by GoogleCertificate.jpg" style="width:100%" onclick="onClick(this)" 
+      class="w3-hover-opacity" alt="Technical Support Fundamentals by Google Certificate by Coursera">
+      Technical Support Fundamentals by Google Certificate by 
+        <a href="https://www.coursera.org/account/accomplishments/certificate/QNDP9DAZ96RS" 
+        style="color:rgb(45, 132, 182); text-decoration:none;">Coursera</a> 
+    </div>
+    <div class="w3-col m3"> 
+      <img src="images/LinkedIn CertificateOfCompletion_Advanced Java Programming.jpg" style="width:100%" onclick="onClick(this)" 
+      class="w3-hover-opacity" alt="Advanced Java Programming Certificate by LinkedIn"> 
+        Advanced Java Programming Certificate by 
+        <a href="https://www.linkedin.com/learning/certificates/f3fa243700d38dfaac0e0924527088ff4e6f7683b81460618aea40305d41eb9f" 
+        style="color:rgb(45, 132, 182); text-decoration:none;">LinkedIn</a>
+    </div>
+    <div class="w3-col m3">
+      <img src="images/CodeacademyCodeFoudationSkillPath_page-0001.jpg" style="width:100%" onclick="onClick(this)" 
+      class="w3-hover-opacity" alt="Code Foundations Skill Path Certificate by Codecademy">Code Foundations Skill Path by 
+        <a href="https://www.codecademy.com/profiles/PrathameshSurve/certificates/5b55e668646caa552f8e4d1d" 
+        style="color:rgb(45, 132, 182); text-decoration:none;">Codecademy</a> 
+    </div>
+    <div class="w3-col m3">
+      <img src="images/Codecademy's Learn Java- Introduction Course Certificate_pages-to-jpg-0001.jpg" style="width:100%" onclick="onClick(this)" 
+      class="w3-hover-opacity" alt="Learn Java: Introduction Course Certificate by Codecademy">Learn Java: Introduction Course Certificate by 
+        <a href="https://www.codecademy.com/profiles/PrathameshSurve/certificates/8149b07e106bb4b49aad31a6432bf648" 
+        style="color:rgb(45, 132, 182); text-decoration:none;">Codecademy</a> 
+    </div>
+    <div class="w3-col m3">
+      <img src="images/LinkedIn CertificateOfCompletion_Programming Foundations Beyond the Fundamentals.jpg" style="width:100%" 
+      onclick="onClick(this)" class="w3-hover-opacity" alt="Programming Foundations: Beyond the Fundamentals Certificate by LinkedIn">
+       Programming Foundations: Beyond the Fundamentals by
+        <a href="https://www.linkedin.com/learning/certificates/7a9856f9e900d6544a1d8bc3108d1e228a14769ad7f09ff4c60e8aaf7177dfa9" 
+        style="color:rgb(45, 132, 182); text-decoration:none;">LinkedIn</a> 
+    </div>
+    <div class="w3-col m3">
+      <img src="images/skillup2504900_Full_Stack_Development_for_Beginners.jpg" style="width:100%" onclick="onClick(this)" 
+      class="w3-hover-opacity" alt="Full Stack Development for Beginners Certificate by Simplilearn">
+        Full Stack Development for Beginners by 
+        <a href="https://lnkd.in/gY6vpXem" style="color:rgb(45, 132, 182); text-decoration:none;">Simplilearn</a> 
+    </div>
+    <div class="w3-col m3">
+      <img src="images/LetsGrowMore CertPrathamesh Sanjay Surve.jpg" style="width:100%" onclick="onClick(this)" 
+      class="w3-hover-opacity" alt="Virtual Internship Program in Web Development by Let's Grow More">
+        Virtual Web Development Internship by 
+        <a href="https://letsgrowmore.in/about/" style="color:rgb(45, 132, 182); text-decoration:none;">Let's Grow More</a> 
+    </div>
+    <div class="w3-col m3">
+      <img src="images/oasisPrathamesh Sanjay Surve Certificate.jpg" style="width:100%" onclick="onClick(this)" 
+      class="w3-hover-opacity" alt="Web Development and Designing Internship Certificate by Oasis Infobyte">
+        Web Development and Designing Internship by 
+        <a href="https://oasisinfobyte.com/#about" style="color:rgb(45, 132, 182); text-decoration:none;">Oasis Infobyte </a> 
+    </div>
+    <div class="w3-col m3">
+      <img src="images/InfosysSpringboard Techniques for big data analytics.jpg" style="width:100%" onclick="onClick(this)" 
+      class="w3-hover-opacity" alt="Techniques for Big Data Analytics Certificate by Infosys Springboard">
+         Techniques for Big Data Analytics Certificate by 
+        <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_0135015607153213448484/1-520b12ad-92c6-45c6-93b6-58f1d4c858a9.pdf" 
+        style="color:rgb(45, 132, 182); text-decoration:none;">Infosys Springboard</a> 
+    </div>
+    <a href="https://drive.google.com/drive/folders/1ZhrZeMQoUQ3nVl-MbHlY0RgYhTJSxL8V?usp=sharing">
+      <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+    </a>
+  </div>
+
+  <!--Empty div class for intersection division-->
+  <div class="w3-content w3-container w3-padding-32"></div>
+
+  <!-- Container (Portfolio Section 2= My Creative Endeavors) -->
+    <h3 class="w3-center">MY CREATIVE ENDEAVORS</h3>
+    <p class="w3-center"><em>Here are a few images showcasing my latest creative projects.<br>
+      You're welcome to click on the images to view them in a larger size and explore the details.</em></p><br>
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
       <div class="w3-col m3">
         <img src="images/banner1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
           alt="The Beast-fire Model">
       </div>
-
       <div class="w3-col m3">
-        <img src="images/bestevar.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+        <img src="images/banner2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
           alt="A Simple Portrait">
       </div>
-
       <div class="w3-col m3">
-        <img src="images/IMG_0577.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-          alt="The Street Portrait">
+        <img src="images/banner3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="The Glowing Text Effect">
       </div>
-
       <div class="w3-col m3">
-        <img src="images/sdtghfygiu.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+        <img src="images/banner4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
           alt="The Manipulation Work">
       </div>
+      <a href="https://www.pinterest.com/pratham_314/_created"><button class="w3-button w3-padding-large w3-light-grey" 
+        style="margin-top:64px">LOAD MORE</button></a>
     </div>
-
-    <div class="w3-row-padding w3-center w3-section">
-      <div class="w3-col m3">
-        <img src="images/om1125.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="An Old School Cinematic">
-      </div>
-
-      <div class="w3-col m3">
-        <img src="images/wordssaandmee.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-          alt="The Word Cloud">
-      </div>
-
-      <div class="w3-col m3">
-        <img src="images/1ashusmkookegrl.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-          alt="An imagination Fantacy Work">
-      </div>
-
-      <div class="w3-col m3">
-        <img src="images/psj1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A Saturated Urban Portrait">
-      </div>
-      <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-    </div>
+  </div>
   </div>
 
   <!-- Modal for full size images on click-->
@@ -258,12 +273,11 @@
 
   <!-- Container (Contact Section) -->
   <div class="w3-content w3-container w3-padding-64" id="contact">
-    <h3 class="w3-center">WHERE I WORK</h3>
+    <h3 class="w3-center">CONNECT WITH ME</h3>
     <p class="w3-center"><em>I'd love your feedback!</em></p>
-
     <div class="w3-row w3-padding-32 w3-section">
       <div class="w3-col m4 w3-container">
-        <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+        <img src="images/map.jpg" class="w3-image w3-round" style="width:100%">
       </div>
       <div class="w3-col m8 w3-panel">
         <div class="w3-large w3-margin-bottom">
@@ -272,21 +286,30 @@
           <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: prathamsurve101@gmail.com<br>
         </div>
         <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-        <form action="/action_page.php" target="_blank">
+        <form action="#" onsubmit="return handleSubmit()">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
+              <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" id="nameField">
+              </div>
+              <div class="w3-half">
+                  <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email" id="emailField">
+              </div>
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-right w3-section" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" id="messageField">
+          <button class="w3-button w3-black w3-right w3-section" type="submit" id="submitButton">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
           </button>
-        </form>
+       </form>
+      <div id="confirmation" style="display: none;">
+          <p>I apologize for any confusion. There are certain issues on my server's end.
+             To communicate with me, please use the Gmail button located in the upper right corner. Thank you!</p>
       </div>
+      </div>
+    </div>
+    <div class="w3-center">
+      <a href="resources/Prathamesh's Resume.pdf" download="Prathamesh's Resume.pdf">
+        <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">DOWNLOAD RESUME</button>
+      </a> 
     </div>
   </div>
 
@@ -300,42 +323,100 @@
       <a href="https://twitter.com/PrathameS23"><i class="fa fa-twitter w3-hover-opacity"></i></a>
       <a href="https://www.linkedin.com/in/prathmesh-surve-83900l9850"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
     </div>
-    <p>Copyright ©2023 Prathamesh Surve. All rights reserved. No part of this website may be reproduced, distributed, or transmitted in any 
+    <p>Copyright © 2023 Prathamesh Surve. All rights reserved. No part of this website may be reproduced, distributed, or transmitted in any 
       form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission 
       of the owner, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by 
       copyright law. For permission requests, please contact prathamsurve101@gmail.com.</p>
   </footer>
+<!--JavaScript-->
+<script>
 
-  <script>
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
+   // Change style of navbar on scroll
+   window.onscroll = function () { myFunction() };
+  function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+      navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
+  }
 
-    // Change style of navbar on scroll
-    window.onscroll = function () { myFunction() };
-    function myFunction() {
-      var navbar = document.getElementById("myNavbar");
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-      } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    //Script for typing text effect-->
+    const textElement = document.getElementById("text");
+    const cursorElement = document.getElementById("cursor");
+    const phrases = [
+      "Welcome to my journey.",
+      "I'm a future Software Engineer.",
+      "Exploring world of programming.",
+      "Code, Coffee, and Curiosity.",
+    ];
+  
+    let phraseIndex = 0;
+    let charIndex = 0;
+  
+    function typeText() {
+        if (charIndex < phrases[phraseIndex].length) {
+            textElement.textContent += phrases[phraseIndex][charIndex];
+            charIndex++;
+            setTimeout(typeText, 50); // Adjust typing speed here
+        } else {
+            setTimeout(eraseText, 1000); // Pause before erasing
+        }
+    }
+  
+    function eraseText() {
+        if (charIndex > 0) {
+            textElement.textContent = phrases[phraseIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(eraseText, 50); // Adjust erasing speed here
+        } else {
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            setTimeout(typeText, 500); // Pause before typing next phrase
+        }
+    }
+  
+    typeText();
+  
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+
+  /* Scripts for mobile screen functions*/
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  //Script For  Send Message Button
+  function handleSubmit() {
+          // Simulate a successful submission
+          showConfirmation();
+          clearFields();
+          return false; // Prevent the form from actually submitting
       }
-    }
-
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function toggleFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
+      
+      function showConfirmation() {
+          document.getElementById("submitButton").style.display = "none"; // Hide the submit button
+          document.getElementById("confirmation").style.display = "block"; // Show the confirmation message
       }
-    }
-  </script>
+      
+      function clearFields() {
+          document.getElementById("nameField").value = "";
+          document.getElementById("emailField").value = "";
+          document.getElementById("messageField").value = "";
+      }
+
+</script>
 
 </body>
 
