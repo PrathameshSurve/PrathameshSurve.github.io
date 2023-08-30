@@ -71,3 +71,11 @@ html {
     min-height: 400px;
   }
 }
+
+/*Counting Numbers animation*/
+.count {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+

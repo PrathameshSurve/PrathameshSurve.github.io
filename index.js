@@ -13,12 +13,10 @@ function sendMail() {
         showEmptyFields();
         return;
     }
-
     if (!isValidGmail(email)) {
         showValidMail();
         return;
     }
-
     var params = {
         name: name,
         email: email,
@@ -70,3 +68,35 @@ function showEmptyFields() {
         document.getElementById("submitButton").style.display = "block"; // Show the submit button again
     }, 6000);
 }
+
+//Script for counting number animation
+const counters = document.querySelectorAll('.count');
+const speed = 5; // Adjust the speed of counting (milliseconds per step)
+const softwareCounter = counters[1]; // Select the Software counter
+
+window.addEventListener('scroll', () => {
+  counters.forEach((counter, index) => {
+    const target = +counter.getAttribute('data-count');
+    let currentCount = 0;
+    let counterSpeed = speed;
+
+    if (index === 1) {
+      // Increase speed for Software counter
+      counterSpeed = 1; // Adjust the speed for Software counter
+      currentCount = 190;
+    }
+
+    const updateCount = () => {
+      if (currentCount < target) {
+        currentCount += 0.2;
+        counter.innerText = currentCount.toFixed(1);
+        setTimeout(updateCount, counterSpeed);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCount();
+  });
+});
+
