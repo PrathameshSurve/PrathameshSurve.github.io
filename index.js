@@ -100,3 +100,63 @@ window.addEventListener('scroll', () => {
   });
 });
 
+//Script for image Panels Active and deactive process
+
+const panels = document.querySelectorAll('.panel');
+
+panels.forEach((panel) => {
+	panel.addEventListener('click', () => {
+		removeActiveClasses();
+		panel.classList.toggle('active');
+	});
+});
+
+function removeActiveClasses() {
+	panels.forEach((panel) => {
+		panel.classList.remove('active');
+	});
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // Function to open the lightbox with a specific image
+  function openLightbox(imageUrl) {
+    const lightbox = document.querySelector('.lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+
+    lightboxImage.src = imageUrl;
+    lightbox.style.display = 'block';
+}
+
+// Function to close the lightbox
+function closeLightbox() {
+    const lightbox = document.querySelector('.lightbox');
+    lightbox.style.display = 'none';
+}
+
+// Add double-click event listeners to your image panels
+const imagePanels = document.querySelectorAll('.panel'); // Use a different variable name here
+imagePanels.forEach(panel => {
+    panel.addEventListener('dblclick', function () {
+        const backgroundImage = getComputedStyle(panel).backgroundImage;
+        const imageUrl = backgroundImage.match(/url\(["']?([^"']*)["']?\)/)[1];
+        openLightbox(imageUrl);
+    });
+});

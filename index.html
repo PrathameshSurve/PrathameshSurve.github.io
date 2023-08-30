@@ -224,7 +224,7 @@
   </div>
 
   <!--Empty div class for intersection division-->
-  <div class="w3-content w3-container w3-padding-32"></div>
+  <div class="w3-padding-32"></div>
 
   <!-- Container (Portfolio Section 2= My Creative Endeavors) -->
     <h3 class="w3-center">MY CREATIVE ENDEAVORS</h3>
@@ -251,9 +251,7 @@
       <a href="https://www.pinterest.com/pratham_314/_created"><button class="w3-button w3-padding-large w3-light-grey" 
         style="margin-top:64px">LOAD MORE</button></a>
     </div>
-  </div>
-  </div>
-
+ 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
     <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
@@ -264,7 +262,47 @@
     </div>
   </div>
 
-  <!-- Third Parallax Image with Portfolio Text -->
+    <!--Empty div class for intersection division-->
+    <div class="w3-padding-32"></div>
+
+<!--Porfolio Section=3 For My Projects-->
+  <h3 class="w3-center">MY RECENT PROJECTS</h3>
+    <p class="w3-center"><em>Here are a few images and video showcasing my latest creative projects.<br>
+      You're welcome to click on this <a href="https://github.com/PrathameshSurve/Vehicle-Registration-System-Using-Blockchain" 
+      style="color:rgb(106, 158, 27); text-decoration: none;">link</a>
+      to visit source code and explore the details. Kindly double click on image to open it in full size.</em></p><br>
+      <div class="container w3-row-padding w3-center ">
+        <!--Video Content-->
+        <div >
+          <video src="resources/LGM Intern Task0 website.mp4" muted autoplay width="80%" height="100%">
+            May be your browser don't have support for this kind of video</video> 
+        </div>
+        
+        <!--Panel Content-->
+          <div class="panel active"  style="background-image: url(./resources/User_Signup_page.JPG)">
+            <h3>User Signup Page</h3>
+          </div>
+          <div class="panel" style="background-image: url(./resources/UserLoginPage.JPG)">
+            <h3>User Login Page</h3>
+          </div>
+          <div class="panel" style="background-image: url(./resources/UserVehicleRegistrionForm.JPG)">
+            <h3>User Vehicle Registrion Form</h3>
+          </div>
+          <div class="panel" style="background-image: url(./resources/UserVehicleRegistedDetails.JPG)">
+            <h3>User Vehicle Registed Details</h3>
+          </div>
+          <div class="panel" style="background-image: url(./resources/VehicleAuthorizationByAdmin.JPG)">
+            <h3>Vehicle Authorization By Admin</h3>
+          </div> 
+          <!-- Lightbox container -->
+          <div class="lightbox">
+            <span class="close-button" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-image">
+           </div>
+      </div>
+  </div>
+
+  <!-- Third Parallax Image with Contact Text -->
   <div class="bgimg-3 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
       <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
