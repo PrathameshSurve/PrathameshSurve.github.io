@@ -286,26 +286,42 @@
           <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: prathamsurve101@gmail.com<br>
         </div>
         <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-        <form action="#" onsubmit="return handleSubmit()">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-              <div class="w3-half">
-                  <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" id="nameField">
-              </div>
-              <div class="w3-half">
-                  <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email" id="emailField">
-              </div>
+ <!--Script for Send Message Button-->
+        <script src="index.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+          (function () {
+            emailjs.init("xcZLmxUU1ukL_QSzr");
+          })();
+        </script>
+<!--Form For Send MEssage By gmail-->
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="form-group w3-half">
+            <input type="text" class="form-control w3-input w3-border" name="name" id="name" placeholder="Name" autocomplete="off"/>
+          </div> 
+          <div class="form-group w3-half">
+            <input type="email" class="form-control w3-input w3-border" name="email" id="email" placeholder="Email" autocomplete="off"/>
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" id="messageField">
-          <button class="w3-button w3-black w3-right w3-section" type="submit" id="submitButton">
-              <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-       </form>
-      <div id="confirmation" style="display: none;">
-          <p>I apologize for any confusion. There are certain issues on my server's end.
-             To communicate with me, please use the Gmail button located in the upper right corner. Thank you!</p>
-      </div>
+        </div>
+        <div class="form-group">    
+          <input type="text" class="form-control w3-input w3-border" name="message" id="message" placeholder="Message" autocomplete="off"/>
+        </div>
+        <button class="btn btn-primary w3-button w3-black w3-right w3-section" type="submit" id="submitButton" onclick="sendMail()">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+        <div id="confirmation" style="display: none;">
+          <p>Your message has been sent successfully. Please wait for 10 seconds to send a new message. Thank you!</p>
+        </div>
+        <div id="showValidMail" style="display: none;">
+          <p>The provided email address is not valid. Please enter a valid email and try again. Thank you!</p>
+        </div>
+        <div id="showEmptyFields" style="display: none;">
+          <p>Kindly complete both the name and message fields before submitting. Please attempt again. Thank you!</p>
+        </div>
       </div>
     </div>
+    
+<!--Resume Download Button-->
     <div class="w3-center">
       <a href="resources/Prathamesh's Resume.pdf" download="Prathamesh's Resume.pdf">
         <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">DOWNLOAD RESUME</button>
@@ -397,25 +413,6 @@
     }
   }
   
-  //Script For  Send Message Button
-  function handleSubmit() {
-          // Simulate a successful submission
-          showConfirmation();
-          clearFields();
-          return false; // Prevent the form from actually submitting
-      }
-      
-      function showConfirmation() {
-          document.getElementById("submitButton").style.display = "none"; // Hide the submit button
-          document.getElementById("confirmation").style.display = "block"; // Show the confirmation message
-      }
-      
-      function clearFields() {
-          document.getElementById("nameField").value = "";
-          document.getElementById("emailField").value = "";
-          document.getElementById("messageField").value = "";
-      }
-
 </script>
 
 </body>
