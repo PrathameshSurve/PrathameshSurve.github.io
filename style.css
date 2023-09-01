@@ -71,7 +71,9 @@ html {
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: auto;
+  min-height: 200px;
+  width: 100%;
   border-radius: 50px;
   color: white;
   cursor: pointer;
@@ -173,7 +175,7 @@ html {
 @media (max-width: 767px) {
  
   .panel {
-    height:  16vh; /* Adjust height as needed for mobile devices */
+    /*height:  16vh;  Adjust height as needed for mobile devices */
     border-radius: 15px;
 }
 
