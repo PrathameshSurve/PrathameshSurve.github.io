@@ -72,7 +72,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   height: auto;
-  min-height: 200px;
+  min-height: 400px;
   width: 100%;
   border-radius: 50px;
   color: white;
@@ -175,8 +175,9 @@ html {
 @media (max-width: 767px) {
  
   .panel {
-    /*height:  16vh;  Adjust height as needed for mobile devices */
+    
     border-radius: 15px;
+    min-height: 200px;
 }
 
 .panel h3 {
