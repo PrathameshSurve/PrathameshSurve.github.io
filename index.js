@@ -117,25 +117,6 @@ function removeActiveClasses() {
 	});
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   // Function to open the lightbox with a specific image
   function openLightbox(imageUrl) {
     const lightbox = document.querySelector('.lightbox');
