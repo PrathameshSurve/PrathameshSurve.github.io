@@ -62,8 +62,7 @@ html {
         font-size: 36px;
         font-weight: bold;
     }
-
-/* CSS for panels */    
+   
 /*CSS for panels view on laptop screen*/
 .container {
   display: flex ;
