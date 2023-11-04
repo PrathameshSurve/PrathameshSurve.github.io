@@ -173,7 +173,7 @@ html {
 }
 
 /*CSS for panels view on mobile screen*/
-@media (max-width: 767px) {
+@media (max-device-width: 767px) {
  
 .panel {
     
