@@ -175,7 +175,7 @@ html {
 /*CSS for panels view on mobile screen*/
 @media (max-width: 767px) {
  
-  .panel {
+.panel {
     
     border-radius: 15px;
     min-height: 200px;
@@ -184,6 +184,10 @@ html {
 .panel h3 {
     bottom: 10px; /* Adjust the position of the title */
     font-size: 10px; /* Reduce font size for smaller screens */
+}
+
+.mobileImg img{
+  margin: 20px 0px;
 }
  
 } 

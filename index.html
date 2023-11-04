@@ -20,10 +20,10 @@
       onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" style="color:rgb(0, 0, 0);" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" style="color:rgb(0, 0, 0);" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" style="color:rgb(0, 0, 0);" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" style="color:rgb(0, 0, 0);" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#home" style="color:#333;" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" style="color:#333;" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" style="color:#333;" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" style="color:#333;" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="mailto:prathamsurve101@gmail.com" style="color:rgb(0, 0, 0);" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-envelope"></i>
     </a>
@@ -133,8 +133,8 @@
       </div>
     </div>
     
-    <!-- Container (Portfolio Section 1= My Achievements)-->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <!-- Container Portfolio Section 1 : My Achievements-->
+    <div class="w3-content w3-center w3-container w3-padding-64" id="portfolio">
       <h3 class="w3-center">MY ACHIEVEMENTS</h3>
       <p class="w3-center"><em>Here are a few certificates showcasing my recent course accomplishments.</em></p><br>
       
@@ -258,13 +258,67 @@
       
       <!--Empty div class for intersection division-->
       <div class="w3-padding-32"></div>
-  
-      <!-- Container (Portfolio Section 2= My Creative Endeavors) -->
+
+
+
+
+
+                  <!-- ContainerPorfolio Section=2 : My Projects -->
+                  <h3 class="w3-center">MY RECENT PROJECTS</h3>
+                  <p class="w3-center"><em>Here are a few images and video showcasing my latest creative projects.<br>
+                    You're welcome to click on <a href="https://github.com/PrathameshSurve/Vehicle-Registration-System-Using-Blockchain" 
+                    style="color:rgb(27, 110, 158); text-decoration: none;">this link</a>
+                    to visit source code and explore the details. Kindly double click on image to open it in full size.</em></p><br>
+                    <!--Panel Content-->
+                    <div class="container w3-row-padding w3-center">
+                      <!-- Video Content -->
+                      <div class="panel active">
+                        <video class="panel-video" autoplay loop muted playsinline>
+                          <source src="./resources/WebprojectVideo.mp4" type="video/mp4">
+                        </video>
+                        <h3>Project Source Code and Output</h3>
+                      </div>
+                      <!-- Image Content -->
+                      <div class="panel" style="background-image: url(./resources/User_Signup_page.JPG)">
+                        <h3>User Signup Page</h3>
+                      </div>
+                      <div class="panel" style="background-image: url(./resources/UserLoginPage.JPG)">
+                        <h3>User Login Page</h3>
+                      </div>
+                      <div class="panel" style="background-image: url(./resources/UserVehicleRegistrionForm.JPG)">
+                        <h3>User Vehicle Registrion Form</h3>
+                      </div>
+                      <div class="panel" style="background-image: url(./resources/UserVehicleRegistedDetails.JPG)">
+                        <h3>User Vehicle Registed Details</h3>
+                      </div>
+                      <div class="panel" style="background-image: url(./resources/VehicleAuthorizationByAdmin.JPG)">
+                        <h3>Vehicle Authorization By Admin</h3>
+                      </div>
+                      <!-- Lightbox container -->
+                      <div class="lightbox">
+                        <span class="close-button" onclick="closeLightbox()">&times;</span>
+                        <img id="lightbox-image" alt="">
+                      </div> 
+                    </div>
+                    <a href="https://github.com/PrathameshSurve?tab=repositories"><button class="w3-button w3-padding-large w3-light-grey" 
+                      style="margin-top:64px">LOAD MORE</button></a>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+               <!-- Container Portfolio Section 3 : My Creative Endeavors -->
       <h3 class="w3-center">MY CREATIVE ENDEAVORS</h3>
       <p class="w3-center"><em>Here are a few images showcasing my latest creative projects.<br>
         You're welcome to click on the images to view them in a larger size and explore the details.</em></p><br>
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-        <div class="w3-row-padding w3-center">
+        <div class="w3-row-padding w3-center mobileImg">
           <div class="w3-col m3">
             <img src="images/banner1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
             alt="The Beast-fire Model">
@@ -292,47 +346,29 @@
                 <img id="img01" class="w3-image" alt="">
                 <p id="caption" class="w3-opacity w3-large"></p>
               </div>
-            </div>            
-            <!--Empty div class for intersection division-->
-            <div class="w3-padding-32"></div>
-            <!--Porfolio Section=3 For My Projects-->
-            <h3 class="w3-center">MY RECENT PROJECTS</h3>
-            <p class="w3-center"><em>Here are a few images and video showcasing my latest creative projects.<br>
-              You're welcome to click on <a href="https://github.com/PrathameshSurve/Vehicle-Registration-System-Using-Blockchain" 
-              style="color:rgb(27, 110, 158); text-decoration: none;">this link</a>
-              to visit source code and explore the details. Kindly double click on image to open it in full size.</em></p><br>
-              <!--Panel Content-->
-              <div class="container w3-row-padding w3-center">
-                <!-- Video Content -->
-                <div class="panel active">
-                  <video class="panel-video" autoplay loop muted playsinline>
-                    <source src="./resources/WebprojectVideo.mp4" type="video/mp4">
-                  </video>
-                  <h3>Project Source Code and Output</h3>
-                </div>
-                <!-- Image Content -->
-                <div class="panel" style="background-image: url(./resources/User_Signup_page.JPG)">
-                  <h3>User Signup Page</h3>
-                </div>
-                <div class="panel" style="background-image: url(./resources/UserLoginPage.JPG)">
-                  <h3>User Login Page</h3>
-                </div>
-                <div class="panel" style="background-image: url(./resources/UserVehicleRegistrionForm.JPG)">
-                  <h3>User Vehicle Registrion Form</h3>
-                </div>
-                <div class="panel" style="background-image: url(./resources/UserVehicleRegistedDetails.JPG)">
-                  <h3>User Vehicle Registed Details</h3>
-                </div>
-                <div class="panel" style="background-image: url(./resources/VehicleAuthorizationByAdmin.JPG)">
-                  <h3>Vehicle Authorization By Admin</h3>
-                </div>
-                <!-- Lightbox container -->
-                <div class="lightbox">
-                  <span class="close-button" onclick="closeLightbox()">&times;</span>
-                  <img id="lightbox-image" alt="">
-                </div> 
-              </div>
-            </div>
+          </div> 
+          
+          
+
+
+
+      <!--Empty div class for intersection division-->
+      <div class="w3-padding-32"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <!-- Third Parallax Image with Contact Text -->
             <div class="bgimg-3 w3-display-container w3-opacity-min">
               <div class="w3-display-middle">
