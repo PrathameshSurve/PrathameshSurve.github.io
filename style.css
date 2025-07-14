@@ -123,7 +123,8 @@ body {
     top: 0;
     left: 0;
     z-index: 999;
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px) !important;
+    background-color: transparent !important;
 }
 .nav__list{
     display: flex;
@@ -137,7 +138,7 @@ body {
     margin-bottom: 5rem;
 }
 .nav__list-link {
-    color: #688277;
+    color: #688277 !important;
     position: relative;
     font-weight: 800;
     text-decoration: none;
@@ -993,4 +994,33 @@ body {
         margin: 20px 0px;
     }
  
+}
+
+.carousel {
+	height: 700px;
+	perspective: 600px;
+	transform: translateY(-100px);
+}
+
+.carousel .carousel-item {
+	cursor: grab;
+	width: 400px;
+}
+
+.carousel .carousel-item:active {
+	cursor: grabbing;
+}
+
+.carousel .carousel-item img, video {
+	width: 100%;
+}
+
+.carousel .carousel-item h3 {
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 2em;
+	font-weight: bold;
+	margin: -5px 0 0;
+	padding: 10px 5px;
+	text-align: center;
 }

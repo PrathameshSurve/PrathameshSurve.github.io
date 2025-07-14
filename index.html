@@ -10,6 +10,14 @@
     <!-- JavaScript Libraries -->
     <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
 
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Materialize JS & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
     <!-- CSS & JS -->
     <link rel="stylesheet" href="style.css"/>
     <script src="./index.js" defer></script>
@@ -571,63 +579,72 @@
             <span style="font-style: italic; font-size: 16px;">Kindly double click on image to open it in full size.</span>
         </p>
         <br>
-        <div class="container" style="display: flex;">
-            <!-- Video Content -->
-            <div class="panel active">
-                <video class="panel-video" autoplay loop muted playsinline>
-                    <source src="./resources/WebprojectVideo.mp4" type="video/mp4">
-                </video>
-                <h3 style="background-color:#000000a9; padding: 5px; border-radius: 5px;">Tour Booking Web Application | <a
-                    href="https://github.com/PrathameshSurve/LetsGrowMore/tree/main/task%200%20single%20page%20website"
-                    style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
-                </h3>
+        <!-- <div class="container" style="display: flex;"> -->
+            <div class="carousel" style="display: flex;">
+                <!-- Video Content -->
+                <div class="carousel-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="./resources/WebprojectVideo.mp4" type="video/mp4">
+                    </video>
+                    <h3 style="font-size:medium;">Tour Booking Web Application | <a
+                        href="https://github.com/PrathameshSurve/LetsGrowMore/tree/main/task%200%20single%20page%20website"
+                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
+                    </h3>
+                </div>
+                <!-- Image Content -->
+                <div class="carousel-item">
+                    <img src="./resources/Colmar_Academy.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="project-image" title="project-image">
+                    <!-- <h3>Code</h3> -->
+                    <h3 style="font-size:medium;">Colmar Academy | <a
+                        href="https://github.com/PrathameshSurve/Colmar-Academy_Bootstrap-Capstone-Project"
+                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
+                    | <a href="https://prathameshsurve.github.io/Colmar-Academy_Bootstrap-Capstone-Project/"
+                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Output</a>
+                    </h3>
+                </div>
+                <div class="carousel-item">
+                    <img src="./resources/bootstrap_grid.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="project-image" title="project-image">
+                    <h3 style="font-size:medium;">Bootstrap Grid | <a
+                        href="https://github.com/PrathameshSurve/Bootstratp_Grid"
+                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
+                    | <a href="https://prathameshsurve.github.io/Bootstratp_Grid/"
+                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Output</a>
+                    </h3>
+                </div>
+                <div class="carousel-item">
+                    <img src="./resources/UserVehicleRegistrionForm.JPG?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="project-image" title="project-image">
+                    <h3 style="font-size:medium;">Vehicle Registration System Using
+                    Blockchain | <a href="https://github.com/PrathameshSurve/Vehicle-Registration-System-Using-Blockchain"
+                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
+                    </h3>
+                </div>
+                <div class="carousel-item">
+                    <img src="./resources/MyMovie_AngularApp.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="project-image" title="project-image">
+                    <h3 style="font-size:medium;">My Movie AngularJS Web Application |
+                    <a href="https://github.com/PrathameshSurve/MyMovieApp"
+                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
+                    </h3>
+                </div>
+                <div class="carousel-item">
+                    <img src="./resources/Crilma_CRM.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="project-image" title="project-image">
+                    <h3 style="font-size:medium;">CRM Web Application Using Springboot
+                    and Angular |
+                    <a href="https://github.com/PrathameshSurve/Customer-Relationship-Management-System"
+                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
+                    </h3>
+                </div>
+                <!-- Lightbox container -->
+                <!-- <div class="lightbox">
+                    <span class="close-button" onclick="closeLightbox()">&times;</span>
+                    <img id="lightbox-image" alt="Project Screenshot">
+                </div> -->
             </div>
-            <!-- Image Content -->
-            <div class="panel" style="background-image: url(./resources/Colmar_Academy.png)">
-                <h3 style="background-color:#000000a9; padding: 5px; border-radius: 5px;">Colmar Academy | <a
-                    href="https://github.com/PrathameshSurve/Colmar-Academy_Bootstrap-Capstone-Project"
-                    style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
-                | <a href="https://prathameshsurve.github.io/Colmar-Academy_Bootstrap-Capstone-Project/"
-                    style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Output</a>
-                </h3>
-            </div>
-            <div class="panel" style="background-image: url(./resources/bootstrap_grid.png)">
-                <h3 style="background-color:#000000a9; padding: 5px; border-radius: 5px;">Bootstrap Grid | <a
-                    href="https://github.com/PrathameshSurve/Bootstratp_Grid"
-                    style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
-                | <a href="https://prathameshsurve.github.io/Bootstratp_Grid/"
-                    style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Output</a>
-                </h3>
-            </div>
-            <div class="panel" style="background-image: url(./resources/UserVehicleRegistrionForm.JPG)">
-                <h3 style="background-color:#000000a9; padding: 5px; border-radius: 5px;">Vehicle Registration System Using
-                Blockchain | <a href="https://github.com/PrathameshSurve/Vehicle-Registration-System-Using-Blockchain"
-                    style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
-                </h3>
-            </div>
-            <div class="panel" style="background-image: url(./resources/MyMovie_AngularApp.png)">
-                <h3 style="background-color:#000000a9; padding: 5px; border-radius: 5px;">My Movie AngularJS Web Application |
-                <a href="https://github.com/PrathameshSurve/MyMovieApp"
-                    style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
-                </h3>
-            </div>
-            <div class="panel" style="background-image: url(./resources/Crilma_CRM.png)">
-                <h3 style="background-color:#000000a9; padding: 5px; border-radius: 5px;">CRM Web Application Using Springboot
-                and Angular |
-                <a href="https://github.com/PrathameshSurve/Customer-Relationship-Management-System"
-                    style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
-                </h3>
-            </div>
-            <!-- Lightbox container -->
-            <div class="lightbox">
-                <span class="close-button" onclick="closeLightbox()">&times;</span>
-                <img id="lightbox-image" alt="Project Screenshot">
-            </div>
-        </div>
+        <!-- </div> -->
         <div style="display: flex;">
             <a
                 href="https://github.com/PrathameshSurve?tab=repositories"
                 class="header__resume"
+                style="margin-top: 0px;"
             >
                 SEE MORE PROJECTS...
             </a>

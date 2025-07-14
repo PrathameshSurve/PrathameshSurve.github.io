@@ -248,3 +248,27 @@ function showConfirmation() {
         document.getElementById("submitButton").style.display = "block"; // Show the submit button again
     }, 10000);
 }
+
+// carousel css function
+$(document).ready(function() {
+	$('.carousel').carousel();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.carousel');
+  M.Carousel.init(elems, {
+    dist: -50,     // perspective depth
+    shift: 0,      // space between items
+    padding: 20,
+    numVisible: 5, // how many visible at once
+    indicators: false
+  });
+});
+
+
+document.querySelectorAll('.carousel-item').forEach((item, index) => {
+  item.addEventListener('click', () => {
+    const carousel = M.Carousel.getInstance(document.querySelector('.carousel'));
+    carousel.set(index);
+  });
+});
