@@ -998,8 +998,8 @@ body {
 }
 
 .carousel {
-	height: 550px;
-	perspective: 600px;
+	height: 550px !important;
+	perspective: 600px !important;
 	transform: translateY(-100px);
 }
 
