@@ -573,13 +573,47 @@ body {
  * About Me
  * ==================
  */
-.about{
+.about {
     display: flex;
     width: 100%;
     margin-top: 10rem;
     justify-content: space-between;
+    padding: 2rem;
     padding-bottom: 5rem;
+
+    /* Glass Effect */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    /* Border + Radius */
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+
+    /* 3D Base */
+    transform-style: preserve-3d;
+    transition: all 0.4s ease;
+
+    /* Soft Shadow */
+    box-shadow: 
+        0 10px 30px rgba(0,0,0,0.25),
+        inset 0 0 10px rgba(255,255,255,0.05);
 }
+
+/* Hover 3D Pop Effect */
+.about: hover {
+    transform: translateY(-15px) scale(1.03) rotateX(5deg) rotateY(-5deg);
+    
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.45),
+        0 0 30px rgba(255,255,255,0.1),
+        inset 0 0 15px rgba(255,255,255,0.08);
+}
+
+.about-wrapper {
+    perspective: 1200px;
+}
+
 .about__column{
     text-align: justify;
     width: 100%;
