@@ -1,834 +1,724 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Font -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prathmesh Surve — Full Stack Software Engineer. I build, deploy, and scale software across frontend, backend, databases, infrastructure, and AI automation.">
+    <meta name="keywords" content="Full Stack Software Engineer, Prathmesh Surve, React, Angular, PostgreSQL, Docker, LeetCode, AI Automation">
+    <meta name="author" content="Prathmesh Surve">
+    <meta property="og:title" content="Prathmesh Surve — Full Stack Software Engineer">
+    <meta property="og:description" content="I build, deploy, and scale software — from frontend to backend, databases, infrastructure, and AI automation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prathameshsurve.github.io/mywebpage/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Prathmesh Surve — Full Stack Software Engineer">
+    <meta name="twitter:description" content="Full-stack engineer who owns frontend, backend, databases, deployment, and AI automation.">
+    <title>Prathmesh Surve — Full Stack Software Engineer</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- JavaScript Libraries -->
-    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+    <link rel="icon" href="images/webpageicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon-180x180.png">
 
-    <!-- Materialize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
 
-    <!-- Materialize JS & jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
-    <!-- CSS & JS -->
-    <link rel="stylesheet" href="style.css"/>
-    <script src="./index.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-    <!-- Meta Tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professiosnal Portfolio"/>
-    <meta name="keywords" content="Prathmesh Surve"/>
-    <title>Prathmesh Sanjay Surve - Portfolio</title>
-
-    <!-- Icons -->
-    <link rel="icon" href="images/webpageicon.png" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/webpageicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/webpageicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/webpageicon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/webpageicon.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/webpageicon.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/webpageicon.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/webpageicon.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/webpageicon.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/webpageicon.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/webpageicon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/webpageicon.png">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Prathmesh Surve",
+        "jobTitle": "Full Stack Software Engineer",
+        "url": "https://prathameshsurve.github.io/mywebpage/",
+        "sameAs": [
+            "https://github.com/PrathameshSurve",
+            "https://www.linkedin.com/in/prathmesh-surve-83900l9850",
+            "https://leetcode.com/u/prathamsurve101/"
+        ],
+        "knowsAbout": ["React", "Angular", "TypeScript", "Full Stack Development", "PostgreSQL", "Docker", "AI Automation", "System Design"]
+    }
+    </script>
 </head>
 <body>
-<main>
-    <!-- Hero Header -->
-    <header id="heroHeader" class="hero-header">
-        <nav id="navBar" class="nav">
-            <div class="container">
-                <button type="button" id="hamburgerBtn" class="nav__hamburger-btn">
-                    <span class="nav__hamburger-top"></span>
-                    <span class="nav__hamburger-center"></span>
-                    <span class="nav__hamburger-bottom"></span>
-                </button>
-                <ul id="navList" class="nav__list">
-                    <li class="nav__list-item">
-                        <a class="nav__list-link active" href="#heroHeader">&lt;Home &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#services">&lt;Services &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#works">&lt;Achievements &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#projects">&lt;Projects &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#creativity">&lt;Creativity &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#contact">&lt;Contact &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#about">&lt;About &sol;&gt;</a>
-                    </li>
-                </ul>
-            </div>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+        <div class="container nav__inner">
+            <a href="#hero" class="nav__logo">Prathmesh <span>Surve</span></a>
+
+            <nav class="nav__links" aria-label="Primary navigation">
+                <a href="#experience" class="nav__link" data-nav-link="experience">Experience</a>
+                <a href="#projects" class="nav__link" data-nav-link="projects">Projects</a>
+                <a href="#about" class="nav__link" data-nav-link="about">About</a>
+                <a href="#contact" class="nav__link" data-nav-link="contact">Contact</a>
+                <a href="https://github.com/PrathameshSurve" target="_blank" rel="noopener noreferrer" class="nav__github" aria-label="GitHub profile">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.395-.135-.345-.72-1.395-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub
+                </a>
+            </nav>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMobile">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+        </div>
+
+        <nav class="nav__mobile" id="navMobile" aria-label="Mobile navigation">
+            <a href="#experience" class="nav__link" data-nav-link="experience">Experience</a>
+            <a href="#projects" class="nav__link" data-nav-link="projects">Projects</a>
+            <a href="#about" class="nav__link" data-nav-link="about">About</a>
+            <a href="#contact" class="nav__link" data-nav-link="contact">Contact</a>
+            <a href="https://github.com/PrathameshSurve" target="_blank" rel="noopener noreferrer" class="nav__github">GitHub Profile</a>
         </nav>
-        <section class="header__container container">
-            <div class="header__left">
-                <span class="header__sup-text">Hello There! My name is <span class="footer__link" style="font-weight: 700;">&nbsp;Prathmesh Surve</span>. I am a</span>
-                <h1 class="header__title">
-                    <span class="header__title-1" data-role="WEB">Web</span>
-                    <span class="header__title-2" data-role="DEVELOPER">Developer</span>
-                </h1>
-                <p class="header__msg">As a front-end web developer, my passion lies in creating beautiful and intuitive
-                    user experiences through the use of clean and efficient code.</p>
-                <a href="resources/Prathmesh Surve - Software Developer.pdf" download="Prathmesh Surve - Software Developer.pdf" class="header__resume">Resume</a>
-            </div>
-            <div class="header__right">
-                <img src="./assets/illustrations/header.svg" alt="Header section illustration"/>
-            </div>
-        </section>
-        <span class="header__bg"></span>
     </header>
 
-    <!-- Services -->
-    <section id="services" class="section container">
-        <h2 class="section__title">Services</h2>
+    <main id="main">
 
-        <div class="service-cards">
-            <article class="service-card__box">
-                <span class="service-card__illustration">
-                    <img src="./assets/services/support.svg" alt="Support Illustration"/>
-                </span>
-                <h3 class="service-card__title">Deployment</h3>
-                <p class="service-card__msg"> I am always available to address any issues or concerns you may have.</p>
-                <span class="service-card__bg"></span>
-            </article>
-            <article class="service-card__box">
-                <span class="service-card__illustration">
-                    <img src="./assets/services/design.svg" alt="Design Illustration"/>
-                </span>
-                <h3 class="service-card__title">Design</h3>
-                <p class="service-card__msg">Specialized in creating stunning websites that are both visually appealing and user-friendly.</p>
-                <span class="service-card__bg"></span>
-            </article>
-            <article class="service-card__box">
-                <span class="service-card__illustration">
-                    <img src="./assets/services/developing.svg" alt="Deploy Illustration"/>
-                </span>
-                <h3 class="service-card__title">Developing</h3>
-                <p class="service-card__msg"> I offer custom web development services tailored to your specific needs as a solo professional.</p>
-                <span class="service-card__bg"></span>
-            </article>
-        </div>
-    </section>
+        <!-- Hero -->
+        <section class="hero" id="hero" data-section>
+            <div class="hero__bg" aria-hidden="true">
+                <div class="hero__grid"></div>
+                <div class="hero__bg-gradient"></div>
+                <div class="hero__glow hero__glow--1"></div>
+                <div class="hero__glow hero__glow--2"></div>
+            </div>
+            <div class="container hero__content" data-motion-hero>
+                <h1 class="hero__title">
+                    <span class="motion-line">Prathmesh</span>
+                    <span class="motion-line hero__title-accent"><em>Surve</em></span>
+                </h1>
+                <p class="hero__role motion-line">Full Stack Software Engineer</p>
+                <p class="hero__meta motion-line">~3 years building production software</p>
+                <p class="hero__desc motion-line">
+                    I build, deploy, and maintain complete software systems — from requirements and architecture through production deployment and maintenance.
+                </p>
+                <div class="hero__proof motion-line" aria-label="Engineering focus">
+                    <span class="hero__proof-badge">Full-Stack Ownership</span>
+                    <span class="hero__proof-badge">730+ Problems Solved</span>
+                    <span class="hero__proof-badge">Production Systems</span>
+                    <span class="hero__proof-badge hero__proof-badge--stack">React · Node.js · PostgreSQL</span>
+                </div>
+                <div class="btn-group motion-line">
+                    <a href="#projects" class="btn btn--primary">View Projects</a>
+                    <a href="#engineering-profile" class="btn btn--secondary">Engineering Profile</a>
+                    <a href="resources/Prathmesh%20Surve%20-%20Software%20Developer.pdf" download class="btn btn--secondary">Resume</a>
+                    <a href="#contact" class="btn btn--ghost">Contact</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- My Achievements -->
-    <section id="works" class="section container">
-        <h2 class="section__title">My Achievements</h2>
-        <div class="works">
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/Coursera_SystemAdministration&IT_Infra_Google_page-0001.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="System Administration & IT Infrastructure Services by Google Certificate by Coursera"
-                        >
-                    </span>
-                    <h3 class="work__title">System Administration & IT Infrastructure Services</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://coursera.org/share/2e6fef515d548a48b0a09cfde035f5d4"
-                                style="color:rgb(45, 132, 182); text-decoration:none;"
-                            >
-                                Coursera
-                            </a>
-                        </span>
-                    </span>
+        <!-- Engineering Snapshot -->
+        <section class="eng-snapshot reveal" id="engineering-snapshot" aria-labelledby="eng-snapshot-title">
+            <div class="container">
+                <h2 id="eng-snapshot-title" class="visually-hidden">Engineering Snapshot</h2>
+                <div class="eng-snapshot__grid">
+                    <div class="eng-snapshot__item">
+                        <p class="eng-snapshot__label">Frontend</p>
+                        <p class="eng-snapshot__stack">React · Angular · TypeScript · Redux</p>
+                    </div>
+                    <div class="eng-snapshot__item">
+                        <p class="eng-snapshot__label">Backend</p>
+                        <p class="eng-snapshot__stack">Node.js · Express · Ruby on Rails</p>
+                    </div>
+                    <div class="eng-snapshot__item">
+                        <p class="eng-snapshot__label">Database</p>
+                        <p class="eng-snapshot__stack">PostgreSQL · Query Optimization</p>
+                    </div>
+                    <div class="eng-snapshot__item">
+                        <p class="eng-snapshot__label">Infrastructure</p>
+                        <p class="eng-snapshot__stack">Docker · Nginx · CI/CD · Linux</p>
+                    </div>
+                    <div class="eng-snapshot__item">
+                        <p class="eng-snapshot__label">AI &amp; Automation</p>
+                        <p class="eng-snapshot__stack">Prompt Engineering · Local LLMs · Workflow Automation</p>
+                    </div>
+                    <div class="eng-snapshot__item">
+                        <p class="eng-snapshot__label">Currently Building</p>
+                        <p class="eng-snapshot__stack">CRM Platform · PRAVAN · RBAC · EPMS</p>
+                    </div>
                 </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/HackerRank_java_basic certificate_page-0001.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="Java (Basic) certificate by HackerRank"
-                        >
-                    </span>
-                    <h3 class="work__title">Java (Basic) certificate</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://www.hackerrank.com/certificates/8253c1e69674"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                HackerRank
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                    <img
-                        src="images/HackerRank's css certificate.jpg"
-                        style="width:100%"
-                        onclick="onClick(this)"
-                        class="w3-hover-opacity"
-                        alt="CSS (Basic) certificate by HackerRank"
-                    >
-                </span>
-                    <h3 class="work__title">CSS (Basic) certificate</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://www.hackerrank.com/certificates/52fd4f64f4d3"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                HackerRank
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/Coursera Technical Support Fundamentals by GoogleCertificate.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="Technical Support Fundamentals by Google Certificate by Coursera"
-                        >
-                    </span>
-                    <h3 class="work__title">Technical Support Fundamentals</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://www.coursera.org/account/accomplishments/certificate/QNDP9DAZ96RS"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                Coursera
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/Codecademy's Building Interactive JavaScript Websites Course_page-0001.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="Building Interactive JavaScript Websites Course by Codecademy"
-                        >
-                    </span>
-                    <h3 class="work__title">Building Interactive JavaScript Websites Course</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://www.codecademy.com/profiles/PrathameshSurve/certificates/36ae898a1d1c8524815305b2d1d2ebab"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                Codecademy
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/JavaScript_basics_certificate_by_HackerRank.png"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="JavaScript Basics by HackerRank"
-                        >
-                    </span>
-                    <h3 class="work__title">JavaScript Basics</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://www.hackerrank.com/certificates/iframe/b5a305a38be4"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                HackerRank
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/LinkedIn CertificateOfCompletion_Advanced Java Programming.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="Advanced Java Programming Certificate by LinkedIn"
-                        >
-                    </span>
-                    <h3 class="work__title">Advanced Java Programming Course Certificate</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://www.linkedin.com/learning/certificates/f3fa243700d38dfaac0e0924527088ff4e6f7683b81460618aea40305d41eb9f"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                LinkedIn
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/CodeacademyCodeFoudationSkillPath_page-0001.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="Code Foundations Skill Path Certificate by Codecademy"
-                        >
-                    </span>
-                    <h3 class="work__title">Code Foundations Skill Path</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://www.codecademy.com/profiles/PrathameshSurve/certificates/5b55e668646caa552f8e4d1d"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                Codecademy
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/Codecademy'sLearnJavaCourse.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="Learn Java Course Certificate by Codecademy"
-                        >
-                    </span>
-                    <h3 class="work__title">Learn Java Course Certificate</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://www.codecademy.com/profiles/PrathameshSurve/certificates/d3f89367b558583e361640f778191345"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                Codecademy
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/CertificateOfCompletion_Career Essentials in Software Development by Microsoft and LinkedIn_page-0001.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="Career Essentials in Software Development by Microsoft and LinkedIn"
-                        >
-                    </span>
-                    <h3 class="work__title">Career Essentials in Software Development</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://www.linkedin.com/learning/certificates/f17d0287b1de22d1a7f6f83d1a3232f729c50d8aae6da205b82a8d317ce11076"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                LinkedIn
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/skillup2504900_Full_Stack_Development_for_Beginners.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="Full Stack Development for Beginners Certificate by Simplilearn"
-                        >
-                    </span>
-                    <h3 class="work__title">Full Stack Development for Beginners</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://lnkd.in/gY6vpXem"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                Simplilearn
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/LetsGrowMore CertPrathamesh Sanjay Surve.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="Virtual Internship Program in Web Development by Let's Grow More"
-                        >
-                    </span>
-                    <h3 class="work__title">Virtual Web Development Internship</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://letsgrowmore.in/about/"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                Let's Grow More
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/oasisPrathamesh Sanjay Surve Certificate.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="Web Development and Designing Internship Certificate by Oasis Infobyte"
-                        >
-                    </span>
-                    <h3 class="work__title">Web Development and Designing Internship</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://oasisinfobyte.com/#about"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                Oasis Infobyte
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/Certificate Blockchain By GreateLearning.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="Blockchain Basics Certificate by Great Learning Academy"
-                        >
-                    </span>
-                    <h3 class="work__title">Blockchain Basics</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://www.mygreatlearning.com/academy/learn-for-free/courses/blockchain-basics?utm_source=linkedin&utm_medium=linkedin&utm_campaign=linkedin_certificate_share&utm_source_page=public_certificate_view"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                Great Learning Academy
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/LinkedIN CertificateOfCompletion_SQL Essential TrainingNASBA.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="SQL Essential Training Certificate by LinkedIn"
-                        >
-                    </span>
-                    <h3 class="work__title">SQL Essential Training Certificate</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://www.linkedin.com/learning/certificates/07f2a29fe87174c15eb76c4644907f67d080c60dbcb2d85dca55b237d853f6c1"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                LinkedIn
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/AdvancedWebDevelopmentIntern_HappyVisitorsDotComCertificate.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="Advanced Web Technologies Internship Certificate by Happy Visitors Dot Com"
-                        >
-                    </span>
-                    <h3 class="work__title">Advanced Web Technologies Internship</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://www.happy-visitors.com/"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                Happy Visitors Dot Com
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/InfosysSpringboard Techniques for big data analytics.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="Techniques for Big Data Analytics Certificate by Infosys Springboard"
-                        >
-                    </span>
-                    <h3 class="work__title">Techniques for Big Data Analytics</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_0135015607153213448484/1-520b12ad-92c6-45c6-93b6-58f1d4c858a9.pdf"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                Infosys Springboard
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                        <img
-                            src="images/LinkedIn CertificateOfCompletion_Programming Foundations Beyond the Fundamentals.jpg"
-                            style="width:100%"
-                            onclick="onClick(this)"
-                            class="w3-hover-opacity"
-                            alt="Programming Foundations: Beyond the Fundamentals Certificate by LinkedIn"
-                        >
-                    </span>
-                    <h3 class="work__title">Programming Foundations: Beyond the Fundamentals</h3>
-                    <span class="work__badges">
-                        <span class="work__badge">
-                            <a
-                                href="https://www.linkedin.com/learning/certificates/7a9856f9e900d6544a1d8bc3108d1e228a14769ad7f09ff4c60e8aaf7177dfa9"
-                                style="color:rgb(45, 132, 182); text-decoration:none;">
-                                LinkedIn
-                            </a>
-                        </span>
-                    </span>
-                </div>
-            </article>
-        </div>
-        <div style="display: flex;">
-            <a
-                href="https://www.linkedin.com/in/prathmesh-surve-83900l9850/details/certifications/"
-                class="header__resume"
-            >
-                SEE MORE CERTIFICATIONS...
-            </a>
-        </div>
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
-                <i class="fa fa-remove"></i>
-            </span>
-            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                <img id="img01" class="w3-image" alt="">
-                <p id="caption" class="w3-opacity w3-large"></p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section container" style="padding-bottom: 2rem;">
-        <h2 class="section__title" style="margin-bottom: 10rem;">My Projects!</h2>
-        <p class="header__msg w3-center">
-            Here are a few images and video showcasing my some creative projects.
-            <br>
-            <span style="font-style: italic; font-size: 16px;">Kindly view more projects at the bottom of this section.</span>
-        </p>
-        <br>
-        <!-- <div class="container" style="display: flex;"> -->
-            <div class="carousel" style="display: flex;">
-                <!-- Video Content -->
-                <div class="carousel-item">
-                    <video autoplay loop muted playsinline>
-                        <source src="./resources/WebprojectVideo.mp4" type="video/mp4">
-                    </video>
-                    <h3 style="font-size:medium;">Tour Booking Web Application | <a
-                        href="https://github.com/PrathameshSurve/LetsGrowMore/tree/main/task%200%20single%20page%20website"
-                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
-                    </h3>
-                </div>
-                <!-- Image Content -->
-                <div class="carousel-item">
-                    <img src="./resources/Colmar_Academy.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="project-image" title="project-image">
-                    <!-- <h3>Code</h3> -->
-                    <h3 style="font-size:medium;">Colmar Academy | <a
-                        href="https://github.com/PrathameshSurve/Colmar-Academy_Bootstrap-Capstone-Project"
-                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
-                    | <a href="https://prathameshsurve.github.io/Colmar-Academy_Bootstrap-Capstone-Project/"
-                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Output</a>
-                    </h3>
-                </div>
-                <div class="carousel-item">
-                    <img src="./resources/bootstrap_grid.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="project-image" title="project-image">
-                    <h3 style="font-size:medium;">Bootstrap Grid | <a
-                        href="https://github.com/PrathameshSurve/Bootstratp_Grid"
-                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
-                    | <a href="https://prathameshsurve.github.io/Bootstratp_Grid/"
-                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Output</a>
-                    </h3>
-                </div>
-                <div class="carousel-item">
-                    <img src="./resources/UserVehicleRegistrionForm.JPG?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="project-image" title="project-image">
-                    <h3 style="font-size:medium;">Vehicle Registration System Using
-                    Blockchain | <a href="https://github.com/PrathameshSurve/Vehicle-Registration-System-Using-Blockchain"
-                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
-                    </h3>
-                </div>
-                <div class="carousel-item">
-                    <img src="./resources/MyMovie_AngularApp.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="project-image" title="project-image">
-                    <h3 style="font-size:medium;">My Movie AngularJS Web Application |
-                    <a href="https://github.com/PrathameshSurve/MyMovieApp"
-                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
-                    </h3>
-                </div>
-                <div class="carousel-item">
-                    <img src="./resources/Crilma_CRM.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="project-image" title="project-image">
-                    <h3 style="font-size:medium;">CRM Web Application Using Springboot
-                    and Angular |
-                    <a href="https://github.com/PrathameshSurve/Customer-Relationship-Management-System"
-                        style="color:#000000; text-decoration: none; background-color:#CCCCCC; padding: 5px; border-radius: 5px;">Code</a>
-                    </h3>
-                </div>
-                <!-- Lightbox container -->
-                <!-- <div class="lightbox">
-                    <span class="close-button" onclick="closeLightbox()">&times;</span>
-                    <img id="lightbox-image" alt="Project Screenshot">
-                </div> -->
-            </div>
-        <!-- </div> -->
-        <div style="display: flex;">
-            <a
-                href="https://github.com/PrathameshSurve?tab=repositories"
-                class="header__resume"
-                style="margin-top: 0px;"
-            >
-                SEE MORE PROJECTS...
-            </a>
-        </div>
-    </section>
+        <!-- Experience -->
+        <section class="section section--lg experience experience--featured" id="experience" data-section aria-labelledby="experience-title">
+            <div class="container">
+                <p class="section__label">Experience</p>
+                <h2 id="experience-title" class="section__title reveal">Where I've Built</h2>
+                <p class="section__subtitle">Nearly 3 years owning full-stack delivery — from UI architecture and APIs to databases, deployment, and production maintenance.</p>
 
-    <!-- Creativity -->
-    <section id="creativity" class="section container">
-        <h2 class="section__title" style="margin-bottom: 10vh;">
-            My Creative endeavors
-        </h2>
-        <p class="header__msg w3-center">
-            Here are a few images showcasing my latest creative projects with Adobe Photoshop.
-            <br>
-            <span style="font-style: italic; font-size: 16px;">
-                You're welcome to click on the images to view them in a larger size and explore the details.
-            </span>
-        </p>
-        <div class="w3-row-padding w3-center mobileImg" style="margin-top: 10px;">
-            <div class="w3-col m3">
-                <img
-                    src="images/banner1.jpg"
-                    style="width:100%"
-                    onclick="onClick(this)"
-                    class="w3-hover-opacity"
-                    alt="The Beast-fire Model"
-                >
-            </div>
-            <div class="w3-col m3">
-                <img
-                    src="images/banner2.jpg"
-                    style="width:100%"
-                    onclick="onClick(this)"
-                    class="w3-hover-opacity"
-                    alt="A Simple Portrait"
-                >
-            </div>
-            <div class="w3-col m3">
-                <img
-                    src="images/banner3.jpg"
-                    style="width:100%"
-                    onclick="onClick(this)"
-                    class="w3-hover-opacity"
-                    alt="The Glowing Text Effect"
-                >
-            </div>
-            <div class="w3-col m3">
-                <img
-                    src="images/banner4.jpg"
-                    style="width:100%"
-                    onclick="onClick(this)"
-                    class="w3-hover-opacity"
-                    alt="The Manipulation Work"
-                >
-            </div>
-        </div>
-        <div class="d-flex">
-            <a
-                href="https://www.pinterest.com/pratham_314/_created"
-                class="header__resume"
-            >
-                SEE MORE IMAGES
-            </a>
-        </div>
-    </section>
+                <div class="timeline" data-motion-timeline>
+                    <article class="timeline__item timeline__item--primary">
+                        <span class="timeline__featured-label">Current Role</span>
+                        <div class="timeline__header">
+                            <div>
+                                <h3 class="timeline__role">Frontend Developer</h3>
+                                <p class="timeline__company">VoltUp</p>
+                            </div>
+                            <time class="timeline__date" datetime="2024-05">May 2024 – Present</time>
+                        </div>
+                        <div class="timeline__emphasis">
+                            <span class="timeline__emphasis-pill">Full Stack Ownership</span>
+                            <span class="timeline__emphasis-pill">Product Collaboration</span>
+                            <span class="timeline__emphasis-pill">AI-Assisted Development</span>
+                            <span class="timeline__emphasis-pill">Deployment & DevOps</span>
+                        </div>
+                        <ul class="timeline__list">
+                            <li>Developed and maintained a production CRM platform used daily by internal teams</li>
+                            <li>Built React and Angular applications for enterprise workflows with Redux state management</li>
+                            <li>Optimized PostgreSQL queries and database performance for data-heavy operations</li>
+                            <li>Deployed and managed applications with Docker, Nginx, and CI/CD pipelines</li>
+                            <li>Created Streamlit analytics dashboards for business insights and reporting</li>
+                            <li>Integrated REST APIs across frontend modules with reusable component patterns</li>
+                            <li>Applied AI-assisted development and prompt engineering to accelerate delivery</li>
+                            <li>Collaborated with product managers on feature scoping, priorities, and user experience</li>
+                        </ul>
+                    </article>
 
-    <!-- Contact -->
-    <section id="contact" class="section container">
-        <h2 class="section__title">Let's Connect!</h2>
-        <div class="contact">
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-            <script type="text/javascript">
-                (function () {
-                    emailjs.init("UMjOQBBaZvQP2NT9j");
-                })();
-            </script>
-            <form class="contact__form" autocomplete="off">
-                <div lass="contact__field-wrapper" style="margin-bottom: 0.5rem;">
-                  <p>Swing by for a cup of coffee <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                    <article class="timeline__item timeline__item--secondary">
+                        <div class="timeline__header">
+                            <div>
+                                <h3 class="timeline__role">Frontend Development Intern</h3>
+                                <p class="timeline__company">AmpUp Energy Pvt Ltd</p>
+                            </div>
+                            <time class="timeline__date" datetime="2023-12/2024-04">Dec 2023 – Apr 2024</time>
+                        </div>
+                        <ul class="timeline__list">
+                            <li>Delivered responsive UI from design specifications into production-ready components</li>
+                            <li>Integrated backend REST APIs for user-facing product features</li>
+                            <li>Supported component architecture and collaborative code review practices</li>
+                            <li>Contributed to performance-conscious UI implementation across the application</li>
+                        </ul>
+                    </article>
                 </div>
-                <div class="contact__field-wrapper" style="margin-bottom: 1rem;">
-                    <label for="name">Name:</label>
-                    <input id="name" name="name" type="text" placeholder="What's your name?" autocomplete="off"/>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section section--lg" id="projects" data-section aria-labelledby="projects-title">
+            <div class="container">
+                <p class="section__label">Selected Work</p>
+                <h2 id="projects-title" class="section__title reveal">Projects I've Built</h2>
+                <p class="section__subtitle">Systems I've designed and shipped — spanning AI, access control, full-stack platforms, and production CRM work.</p>
+
+                <div class="projects__grid motion-stagger" data-motion-stagger>
+                    <article class="project-card">
+                        <p class="project-card__number">01</p>
+                        <h3 class="project-card__title">PRAVAN — AI Voice Assistant</h3>
+                        <p class="project-card__tagline">AI voice assistant for hands-free interaction and intelligent automation</p>
+                        <div class="project-card__tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">AI / LLM</span>
+                            <span class="tag">Voice Recognition</span>
+                            <span class="tag">Prompt Engineering</span>
+                        </div>
+                        <div class="case-study">
+                            <div class="case-study__block">
+                                <span class="case-study__label">Problem</span>
+                                <p class="case-study__text">Manual, screen-bound workflows slow down everyday tasks and limit hands-free productivity.</p>
+                            </div>
+                            <div class="case-study__block">
+                                <span class="case-study__label">Approach</span>
+                                <p class="case-study__text">Built an AI voice assistant with speech recognition, LLM-driven responses, and prompt-engineered conversational flows.</p>
+                            </div>
+                            <div class="case-study__block">
+                                <span class="case-study__label">Outcome</span>
+                                <p class="case-study__text">Natural voice-to-action pipelines that automate tasks through context-aware, hands-free interaction.</p>
+                            </div>
+                        </div>
+                        <div class="project-card__actions">
+                            <a href="https://github.com/PrathameshSurve" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View on GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <p class="project-card__number">02</p>
+                        <h3 class="project-card__title">Smart Role-Based Access & Audit Logging System</h3>
+                        <p class="project-card__tagline">Enterprise access control with dynamic permissions and audit trails</p>
+                        <div class="project-card__tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="case-study">
+                            <div class="case-study__block">
+                                <span class="case-study__label">Problem</span>
+                                <p class="case-study__text">Managing dynamic permissions at scale with no traceability of user actions.</p>
+                            </div>
+                            <div class="case-study__block">
+                                <span class="case-study__label">Approach</span>
+                                <p class="case-study__text">Built a React + Node RBAC system with permission-aware UI, admin dashboards, and comprehensive audit logging.</p>
+                            </div>
+                            <div class="case-study__block">
+                                <span class="case-study__label">Outcome</span>
+                                <p class="case-study__text">Flexible role management and traceable user actions across enterprise access control workflows.</p>
+                            </div>
+                        </div>
+                        <div class="project-card__actions">
+                            <a href="https://github.com/PrathameshSurve" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View on GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <p class="project-card__number">03</p>
+                        <h3 class="project-card__title">Enterprise Project Management System (EPMS)</h3>
+                        <p class="project-card__tagline">Full project lifecycle platform for teams at scale</p>
+                        <div class="project-card__tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">Angular Material</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="case-study">
+                            <div class="case-study__block">
+                                <span class="case-study__label">Problem</span>
+                                <p class="case-study__text">Teams needed a unified system for projects, tasks, roles, and notifications without fragmented tooling.</p>
+                            </div>
+                            <div class="case-study__block">
+                                <span class="case-study__label">Approach</span>
+                                <p class="case-study__text">Architected an Angular enterprise app with modular feature growth, role-based views, and REST-integrated dashboards.</p>
+                            </div>
+                            <div class="case-study__block">
+                                <span class="case-study__label">Outcome</span>
+                                <p class="case-study__text">Scalable project and task tracking with notification-driven UX patterns for team-scale usage.</p>
+                            </div>
+                        </div>
+                        <div class="project-card__actions">
+                            <a href="https://github.com/PrathameshSurve" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View on GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <p class="project-card__number">04</p>
+                        <h3 class="project-card__title">Hotel Management System</h3>
+                        <p class="project-card__tagline">End-to-end booking platform with search, auth, and reviews</p>
+                        <div class="project-card__tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Ruby on Rails</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="case-study">
+                            <div class="case-study__block">
+                                <span class="case-study__label">Problem</span>
+                                <p class="case-study__text">Hotel operations required integrated search, booking, authentication, and review management in one platform.</p>
+                            </div>
+                            <div class="case-study__block">
+                                <span class="case-study__label">Approach</span>
+                                <p class="case-study__text">Connected a React frontend to a Ruby on Rails API for listings, reservations, auth, and review workflows.</p>
+                            </div>
+                            <div class="case-study__block">
+                                <span class="case-study__label">Outcome</span>
+                                <p class="case-study__text">Responsive booking and search flows with validated review UX and full-stack reservation management.</p>
+                            </div>
+                        </div>
+                        <div class="project-card__actions">
+                            <a href="https://github.com/PrathameshSurve" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View on GitHub</a>
+                        </div>
+                    </article>
                 </div>
-                <div class="contact__field-wrapper" style="margin-bottom: 2rem;">
-                    <label for="email">Email:</label>
-                    <input id="email" name="email" type="email" placeholder="What's your email?" autocomplete="off"/>
+
+                <div class="btn-group section__cta">
+                    <a href="https://github.com/PrathameshSurve?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">Explore All Repositories →</a>
                 </div>
-                <div class="contact__field-wrapper">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" placeholder="Lets connect!" autocomplete="off"></textarea>
+            </div>
+        </section>
+
+        <!-- Engineering Profile -->
+        <section class="section section--lg eng-profile" id="engineering-profile" data-section aria-labelledby="eng-profile-title">
+            <div class="container">
+                <p class="section__label">Engineering Profile</p>
+                <h2 id="eng-profile-title" class="section__title reveal">How I Engineer</h2>
+                <p class="section__subtitle">Problem-solving habits, open source work, and how I ship from requirements to production.</p>
+
+                <div class="eng-profile__stack motion-stagger" data-motion-stagger>
+                    <!-- LeetCode -->
+                    <div class="eng-profile__leetcode" id="leetcodePanel">
+                        <div class="leetcode-panel__header">
+                            <div>
+                                <h3 class="leetcode-panel__title">LeetCode</h3>
+                                <p class="leetcode-panel__subtitle">Consistent problem solving &amp; coding activity</p>
+                            </div>
+                            <a href="https://leetcode.com/u/prathamsurve101/" target="_blank" rel="noopener noreferrer" class="leetcode-panel__link">@prathamsurve101</a>
+                        </div>
+                        <div class="leetcode-panel__stats leetcode-panel__stats--featured">
+                            <div class="leetcode-stat leetcode-stat--highlight">
+                                <p class="leetcode-stat__value" id="leetcodeSolved">…</p>
+                                <p class="leetcode-stat__label">Problems Solved</p>
+                            </div>
+                            <div class="leetcode-stat">
+                                <p class="leetcode-stat__value" id="leetcodeActiveDays">…</p>
+                                <p class="leetcode-stat__label">Active Days</p>
+                            </div>
+                            <div class="leetcode-stat">
+                                <p class="leetcode-stat__value" id="leetcodeCurrentStreak">…</p>
+                                <p class="leetcode-stat__label">Current Streak</p>
+                            </div>
+                            <div class="leetcode-stat">
+                                <p class="leetcode-stat__value" id="leetcodeMaxStreak">…</p>
+                                <p class="leetcode-stat__label">Max Streak</p>
+                            </div>
+                            <div class="leetcode-stat leetcode-stat--badge">
+                                <p class="leetcode-stat__value">500</p>
+                                <p class="leetcode-stat__label">Day Badge</p>
+                            </div>
+                            <div class="leetcode-stat">
+                                <p class="leetcode-stat__value" id="leetcodeYearSubmissions">…</p>
+                                <p class="leetcode-stat__label">Submissions (Last Year)</p>
+                            </div>
+                        </div>
+                        <div class="leetcode-heatmap" aria-label="LeetCode submission activity heatmap">
+                            <div class="leetcode-heatmap__grid" id="leetcodeHeatmapGrid" role="img" aria-label="Loading activity heatmap"></div>
+                            <p class="leetcode-heatmap__fallback" id="leetcodeHeatmapFallback" hidden>View full submission history on <a href="https://leetcode.com/u/prathamsurve101/" target="_blank" rel="noopener noreferrer">LeetCode</a>.</p>
+                            <div class="leetcode-heatmap__legend" aria-hidden="true">
+                                <span>Less</span>
+                                <span class="leetcode-heatmap__level" data-level="0"></span>
+                                <span class="leetcode-heatmap__level" data-level="1"></span>
+                                <span class="leetcode-heatmap__level" data-level="2"></span>
+                                <span class="leetcode-heatmap__level" data-level="3"></span>
+                                <span>More</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="eng-profile__github-panel">
+                        <div class="leetcode-panel__header">
+                            <div class="eng-profile__github-info">
+                                <img src="https://github.com/PrathameshSurve.png" alt="" class="github__avatar" width="48" height="48" loading="lazy" decoding="async">
+                                <div>
+                                    <h3 class="leetcode-panel__title">GitHub</h3>
+                                    <p class="leetcode-panel__subtitle">Open source &amp; project repositories</p>
+                                </div>
+                            </div>
+                            <a href="https://github.com/PrathameshSurve" target="_blank" rel="noopener noreferrer" class="leetcode-panel__link">@PrathameshSurve</a>
+                        </div>
+                        <div class="eng-profile__github-stats">
+                            <div class="leetcode-stat">
+                                <p class="leetcode-stat__value" id="githubRepoCount">…</p>
+                                <p class="leetcode-stat__label">Public Repositories</p>
+                            </div>
+                            <div class="leetcode-stat leetcode-stat--wide">
+                                <p class="leetcode-stat__value leetcode-stat__value--mono" id="githubTopLangs">…</p>
+                                <p class="leetcode-stat__label">Primary Technologies</p>
+                            </div>
+                        </div>
+                        <div class="github__tech-tags" id="githubTechTags"></div>
+                        <a href="https://github.com/PrathameshSurve" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">View GitHub Profile →</a>
+                    </div>
+
+                    <div class="eng-profile__grid">
+                        <article class="eng-profile__card">
+                            <h3 class="eng-profile__card-title">Engineering Ownership</h3>
+                            <p class="eng-profile__card-desc">I don't just build UI — I own the full lifecycle of software delivery.</p>
+                            <ul class="eng-profile__list">
+                                <li>Gather requirements</li>
+                                <li>Work with product teams</li>
+                                <li>Design solutions</li>
+                                <li>Build frontend</li>
+                                <li>Build backend</li>
+                                <li>Design databases</li>
+                                <li>Deploy applications</li>
+                                <li>Maintain production systems</li>
+                            </ul>
+                        </article>
+
+                        <article class="eng-profile__card">
+                            <h3 class="eng-profile__card-title">What I'm Building Right Now</h3>
+                            <p class="eng-profile__card-desc">Active projects I'm designing, building, and maintaining.</p>
+                            <ul class="eng-profile__list eng-profile__list--projects">
+                                <li>
+                                    <span class="eng-profile__project-name">Production CRM Platform</span>
+                                    <span class="eng-profile__project-detail">@ VoltUp — React, PostgreSQL, Docker, CI/CD</span>
+                                </li>
+                                <li>
+                                    <span class="eng-profile__project-name">PRAVAN</span>
+                                    <span class="eng-profile__project-detail">AI voice assistant with LLM-driven automation</span>
+                                </li>
+                                <li>
+                                    <span class="eng-profile__project-name">RBAC &amp; Audit System</span>
+                                    <span class="eng-profile__project-detail">React + Node.js access control platform</span>
+                                </li>
+                                <li>
+                                    <span class="eng-profile__project-name">EPMS</span>
+                                    <span class="eng-profile__project-detail">Angular full-stack project management system</span>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
                 </div>
-                <!-- Submit button -->
-                <button
-                    id="submitButton"
-                    type="button"
-                    class="contact__submit-btn"
-                    onclick="sendMail()"
-                >
-                    Submit
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about" data-section aria-labelledby="about-title">
+            <div class="container">
+                <p class="section__label">About</p>
+                <h2 id="about-title" class="section__title reveal">About Me</h2>
+
+                <div class="about__grid reveal">
+                    <div class="about__text prose">
+                        <p>I'm a full-stack engineer with ~3 years of experience building, deploying, and maintaining complete software systems. I work from requirements gathering through production — frontend architecture, backend APIs, database design, DevOps, and AI automation.</p>
+                        <p>At VoltUp, I maintain a production CRM used daily by internal teams. I also solve problems consistently — 730+ LeetCode problems — because strong fundamentals make me a better builder.</p>
+                    </div>
+                    <img src="images/profile.jpg" alt="Prathmesh Surve" class="about__photo" width="200" height="200" loading="lazy" decoding="async">
+                </div>
+
+                <div class="collab-block reveal">
+                    <h3 class="collab-block__title">How I Collaborate</h3>
+                    <p class="collab-block__desc">I work across product, design, and engineering — scoping requirements, designing systems, and shipping to production.</p>
+                    <ul class="collab-block__list">
+                        <li class="collab-block__item">
+                            <span class="collab-block__role">Product Managers</span>
+                            <span class="collab-block__detail">Scope features, align on priorities, and ship outcomes tied to business goals</span>
+                        </li>
+                        <li class="collab-block__item">
+                            <span class="collab-block__role">Designers</span>
+                            <span class="collab-block__detail">Turn UX flows and design systems into accessible, performant interfaces</span>
+                        </li>
+                        <li class="collab-block__item">
+                            <span class="collab-block__role">Engineers</span>
+                            <span class="collab-block__detail">Design architecture, review code, and deliver across frontend, backend, and DevOps</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section" id="skills" data-section aria-labelledby="skills-title">
+            <div class="container">
+                <p class="section__label">Technical Stack</p>
+                <h2 id="skills-title" class="section__title reveal">Skills & Technologies</h2>
+
+                <div class="skills__grid reveal">
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Frontend</h3>
+                        <div class="skill-group__items">
+                            <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">Redux</span><span class="tag">Angular</span><span class="tag">Angular Material</span><span class="tag">Tailwind CSS</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive Design</span><span class="tag">REST APIs</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Backend</h3>
+                        <div class="skill-group__items">
+                            <span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">Ruby on Rails</span><span class="tag">Streamlit</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Database</h3>
+                        <div class="skill-group__items">
+                            <span class="tag">PostgreSQL</span><span class="tag">Query Optimization</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">DevOps</h3>
+                        <div class="skill-group__items">
+                            <span class="tag">Docker</span><span class="tag">Nginx</span><span class="tag">CI/CD</span><span class="tag">Linux</span><span class="tag">Git</span><span class="tag">GitHub</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Product & Process</h3>
+                        <div class="skill-group__items">
+                            <span class="tag">Product Development</span><span class="tag">Agile</span><span class="tag">RBAC Systems</span><span class="tag">Authentication</span><span class="tag">PM Collaboration</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">AI & Automation</h3>
+                        <div class="skill-group__items">
+                            <span class="tag">Prompt Engineering</span><span class="tag">AI-Assisted Development</span><span class="tag">AI Workflow Design</span><span class="tag">Process Automation</span><span class="tag">LLM Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI & Automation -->
+        <section class="section ai-section" id="ai" data-section aria-labelledby="ai-title">
+            <div class="container">
+                <p class="section__label">AI & Automation</p>
+                <h2 id="ai-title" class="section__title reveal">How I Use AI in Engineering</h2>
+                <div class="ai-section__content prose">
+                    <p>I use AI as a force multiplier in my daily workflow — prompt engineering, AI-assisted code generation, and automation pipelines that save time and accelerate delivery.</p>
+                    <p>From building PRAVAN, my AI voice assistant, to applying LLM tools while developing at VoltUp, I focus on practical AI that makes me ship faster without cutting corners.</p>
+                </div>
+                <div class="ai-section__pills">
+                    <span class="tag">AI Voice Assistants</span>
+                    <span class="tag">Prompt Engineering</span>
+                    <span class="tag">AI-Assisted Development</span>
+                    <span class="tag">Workflow Automation</span>
+                    <span class="tag">LLM Integration</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Credentials -->
+        <section class="section credentials-showcase" id="credentials" data-section aria-labelledby="credentials-title">
+            <div class="container credentials-showcase__header">
+                <p class="section__label">Credentials</p>
+                <h2 id="credentials-title" class="section__title reveal">Professional Credentials</h2>
+                <p class="section__subtitle">Certifications and completed courses — visible at a glance, no accordion required.</p>
+            </div>
+
+            <div class="credentials-showcase__marquees" aria-label="Certificate showcase">
+                <div id="credentialsMarqueeRow1"></div>
+                <div id="credentialsMarqueeRow2"></div>
+            </div>
+
+            <div class="container credentials-showcase__footer">
+                <a href="https://www.linkedin.com/in/prathmesh-surve-83900l9850/details/certifications/" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">View All on LinkedIn →</a>
+            </div>
+        </section>
+
+        <!-- Beyond Engineering (Accordion) -->
+        <section class="accordion-section accordion-section--secondary" id="beyond" aria-labelledby="beyond-trigger">
+            <div class="container">
+                <button class="accordion__trigger" id="beyond-trigger" data-accordion-trigger aria-expanded="false" aria-controls="beyond-panel">
+                    Beyond Engineering
+                    <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <div id="confirmation" style="display: none; color: #1eec96;">
-                    <p>Your message has been sent successfully. Please wait for 10 seconds to send a new message. Thank you!</p>
+                <div class="accordion__panel" id="beyond-panel" role="region" aria-labelledby="beyond-trigger">
+                    <div class="accordion__panel-inner">
+                        <div class="accordion__content">
+                            <p class="accordion__intro">Creative work outside of product engineering — Adobe Photoshop projects and visual design.</p>
+                            <div class="creative__grid">
+                                <div class="creative__item" data-modal><img src="images/banner1.jpg" alt="The Beast-fire Model" loading="lazy" width="400" height="400"></div>
+                                <div class="creative__item" data-modal><img src="images/banner2.jpg" alt="A Simple Portrait" loading="lazy" width="400" height="400"></div>
+                                <div class="creative__item" data-modal><img src="images/banner3.jpg" alt="The Glowing Text Effect" loading="lazy" width="400" height="400"></div>
+                                <div class="creative__item" data-modal><img src="images/banner4.jpg" alt="The Manipulation Work" loading="lazy" width="400" height="400"></div>
+                            </div>
+                            <div class="credentials__more">
+                                <a href="https://www.pinterest.com/pratham_314/_created" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">View More on Pinterest →</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="showValidMail" style="display: none; color: #d74330;">
-                    <p>The provided email address is not valid. Please enter a valid email and try again. Thank you!</p>
-                </div>
-                <div id="showEmptyFields" style="display: none; color: #d74330;">
-                    <p>Kindly complete both the name and message fields before submitting. Thank you!</p>
-                </div>
-            </form>
-            <span class="contact__illustration">
-                <img src="./assets/illustrations/connect.svg" alt="Group of people connecting with each other"/>
-                <!-- <img src="images/map.jpg" style="height: 40%; position: absolute; top: 0%; left: 0; right: 0; padding: 20px; border-radius: 40px;" alt="my nature image here."> -->
-                <div
-                    class="w3-large w3-margin-bottom"
-                    style="position: absolute; bottom: 80%; left: 0; right: 0; top: 0;
-                            text-align: left; align-content: top; z-index: 1; color: #deffeb;
-                            background-color: rgba(0, 0, 0, 0.2); border: 2px solid #00372b;
-                            padding: 1.5rem; border-radius: 15px;"
-                >
-                  <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-                    Satara, Maharashtra, India. 415514<br>
-                  <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-                    +91 8390079850<br>
-                  <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-                    prathamsurve101@gmail.com<br>
-                </div>
-            </span>
-        </div>
-    </section>
-
-    <!-- About Me -->
-    <section id="about" class="section container">
-        <h2 class="section__title">About Me</h2>
-        <div class="about-wrapper">
-            <div class="about">
-              <p class="about__column">
-                <span style="color:aquamarine; font-size: 40px;">Hi</span>, <br /> I'm Prathmesh Surve — a passionate 25-year-old software developer from Satara, Maharashtra.
-                I hold a Bachelor's degree in Computer Engineering with a CGPA of 7.98 (2023) and bring hands-on
-                experience in building scalable, user-centric applications. I've worked on CRM platforms, real-time
-                dashboards, and secure RBAC systems using technologies like React.js, Angular, Node.js, TypeScript,
-                PostgreSQL, and Docker.
-                Currently based in Pune, I’ve contributed to full-stack projects at VoltUp, where I optimized operations
-                with interactive dashboards and efficient data handling. I’m also ranked in the top 4.2% globally on LeetCode.
-                Beyond code, I'm a visual storyteller — capturing moments through photography, videography, and Photoshop.
-                I believe great software is a blend of logic and creativity — and I strive to master both.
-                Let’s build something amazing together.
-              </p>
-              <span class="contact__illustration">
-                  <!-- <img src="./assets/illustrations/connect.svg" alt="Group of people connecting with each other"/> -->
-                  <img src="images/profile.jpg" alt="Photo of Me">
-              </span>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Social Media Links -->
-    <div class="w3-xlarge w3-section w3-center">
-        <a href="https://www.instagram.com/thesunnysurve/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-        <a href="https://www.snapchat.com/add/pratham_314?share_id=jM7323Q5TTc&locale=en-IN"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
-        <a href="https://github.com/PrathameshSurve/"><i class="fa fa-github w3-hover-opacity"></i></a>
-        <a href="https://www.youtube.com/channel/UC4rU18ro2Shod7-nbamXYdA"><i class="fa fa-youtube w3-hover-opacity"></i></a>
-        <a href="https://twitter.com/PrathameS23"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-        <a href="https://www.linkedin.com/in/prathmesh-surve-83900l9850"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <!-- Contact -->
+        <section class="section section--lg" id="contact" data-section aria-labelledby="contact-title">
+            <div class="container">
+                <p class="section__label">Contact</p>
+                <h2 id="contact-title" class="section__title reveal">Let's Build Something</h2>
+                <p class="section__subtitle">Open to full-stack roles where I can own the stack — from frontend and backend to databases, deployment, and AI automation.</p>
+
+                <div class="contact__grid reveal">
+                    <div class="contact__links">
+                        <a href="https://github.com/PrathameshSurve" target="_blank" rel="noopener noreferrer" class="contact__link-item">
+                            <span class="contact__link-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.395-.135-.345-.72-1.395-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </span>
+                            <div>
+                                <p class="contact__link-label">GitHub</p>
+                                <p class="contact__link-value">@PrathameshSurve</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/prathmesh-surve-83900l9850" target="_blank" rel="noopener noreferrer" class="contact__link-item">
+                            <span class="contact__link-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.062 2.062 0 114.126 0 2.062 2.062 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </span>
+                            <div>
+                                <p class="contact__link-label">LinkedIn</p>
+                                <p class="contact__link-value">prathmesh-surve</p>
+                            </div>
+                        </a>
+                        <a href="mailto:prathamsurve101@gmail.com" class="contact__link-item">
+                            <span class="contact__link-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </span>
+                            <div>
+                                <p class="contact__link-label">Email</p>
+                                <p class="contact__link-value">prathamsurve101@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="resources/Prathmesh%20Surve%20-%20Software%20Developer.pdf" download class="contact__link-item">
+                            <span class="contact__link-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            </span>
+                            <div>
+                                <p class="contact__link-label">Resume</p>
+                                <p class="contact__link-value">Download PDF</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <form class="contact__form motion-stagger" id="contactForm" data-motion-stagger autocomplete="off">
+                        <div class="contact__field">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Your name" required autocomplete="name">
+                        </div>
+                        <div class="contact__field">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="you@company.com" required autocomplete="email">
+                        </div>
+                        <div class="contact__field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about the role or project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary contact__submit" id="submitButton">Send Message</button>
+                        <p class="contact__feedback contact__feedback--success" id="feedbackSuccess" role="status">Message sent successfully. I'll get back to you soon.</p>
+                        <p class="contact__feedback contact__feedback--error" id="feedbackError" role="alert"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal" role="dialog" aria-modal="true" aria-label="Image preview">
+        <div class="modal__content">
+            <button class="modal__close" id="modalClose" aria-label="Close image preview">&times;</button>
+            <img id="modalImage" src="" alt="">
+            <p class="modal__caption" id="modalCaption"></p>
+        </div>
     </div>
 
-    <!-- Copyright Segment -->
-    <marquee>
-        <p style="font-size: 16px;">
-            Copyright © 2025 Prathmesh Surve. All rights reserved. No part of this website may be reproduced, distributed,
-            or transmitted in any
-            form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the
-            prior written permission
-            of the owner, except in the case of brief quotations embodied in critical reviews and certain other
-            noncommercial uses permitted by
-            copyright law. For permission requests, please contact prathamsurve101@gmail.com.
-        </p>
-    </marquee>
-
-    <!-- Footer -->
     <footer class="footer">
-        Made with ❤️ by <a href="https://github.com/PrathameshSurve" target="_blank" class="footer__link">Prathmesh Surve</a>
+        <div class="container footer__inner">
+            <p class="footer__name">&copy; 2026 Prathmesh Surve</p>
+            <p class="footer__role">Full Stack Software Engineer</p>
+            <nav class="footer__links" aria-label="Footer links">
+                <a href="https://github.com/PrathameshSurve" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/prathmesh-surve-83900l9850" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </nav>
+        </div>
     </footer>
-</main>
+
+    <script type="application/json" id="credentials-data">
+    [
+        {"img":"images/Coursera_SystemAdministration&IT_Infra_Google_page-0001.jpg","title":"System Administration & IT Infrastructure Services","source":"Coursera","url":"https://coursera.org/share/2e6fef515d548a48b0a09cfde035f5d4"},
+        {"img":"images/HackerRank_java_basic certificate_page-0001.jpg","title":"Java (Basic)","source":"HackerRank","url":"https://www.hackerrank.com/certificates/8253c1e69674"},
+        {"img":"images/HackerRank's css certificate.jpg","title":"CSS (Basic)","source":"HackerRank","url":"https://www.hackerrank.com/certificates/52fd4f64f4d3"},
+        {"img":"images/Coursera Technical Support Fundamentals by GoogleCertificate.jpg","title":"Technical Support Fundamentals","source":"Coursera","url":"https://www.coursera.org/account/accomplishments/certificate/QNDP9DAZ96RS"},
+        {"img":"images/Codecademy's Building Interactive JavaScript Websites Course_page-0001.jpg","title":"Building Interactive JavaScript Websites","source":"Codecademy","url":"https://www.codecademy.com/profiles/PrathameshSurve/certificates/36ae898a1d1c8524815305b2d1d2ebab"},
+        {"img":"images/JavaScript_basics_certificate_by_HackerRank.png","title":"JavaScript Basics","source":"HackerRank","url":"https://www.hackerrank.com/certificates/iframe/b5a305a38be4"},
+        {"img":"images/LinkedIn CertificateOfCompletion_Advanced Java Programming.jpg","title":"Advanced Java Programming","source":"LinkedIn","url":"https://www.linkedin.com/learning/certificates/f3fa243700d38dfaac0e0924527088ff4e6f7683b81460618aea40305d41eb9f"},
+        {"img":"images/CodeacademyCodeFoudationSkillPath_page-0001.jpg","title":"Code Foundations Skill Path","source":"Codecademy","url":"https://www.codecademy.com/profiles/PrathameshSurve/certificates/5b55e668646caa552f8e4d1d"},
+        {"img":"images/Codecademy'sLearnJavaCourse.jpg","title":"Learn Java Course","source":"Codecademy","url":"https://www.codecademy.com/profiles/PrathameshSurve/certificates/d3f89367b558583e361640f778191345"},
+        {"img":"images/CertificateOfCompletion_Career Essentials in Software Development by Microsoft and LinkedIn_page-0001.jpg","title":"Career Essentials in Software Development","source":"Microsoft & LinkedIn","url":"https://www.linkedin.com/learning/certificates/f17d0287b1de22d1a7f6f83d1a3232f729c50d8aae6da205b82a8d317ce11076"},
+        {"img":"images/skillup2504900_Full_Stack_Development_for_Beginners.jpg","title":"Full Stack Development for Beginners","source":"Simplilearn","url":"https://lnkd.in/gY6vpXem"},
+        {"img":"images/LetsGrowMore CertPrathamesh Sanjay Surve.jpg","title":"Virtual Web Development Internship","source":"Let's Grow More","url":"https://letsgrowmore.in/about/"},
+        {"img":"images/oasisPrathamesh Sanjay Surve Certificate.jpg","title":"Web Development and Designing Internship","source":"Oasis Infobyte","url":"https://oasisinfobyte.com/#about"},
+        {"img":"images/Certificate Blockchain By GreateLearning.jpg","title":"Blockchain Basics","source":"Great Learning","url":"https://www.mygreatlearning.com/academy/learn-for-free/courses/blockchain-basics"},
+        {"img":"images/LinkedIN CertificateOfCompletion_SQL Essential TrainingNASBA.jpg","title":"SQL Essential Training","source":"LinkedIn","url":"https://www.linkedin.com/learning/certificates/07f2a29fe87174c15eb76c4644907f67d080c60dbcb2d85dca55b237d853f6c1"},
+        {"img":"images/AdvancedWebDevelopmentIntern_HappyVisitorsDotComCertificate.jpg","title":"Advanced Web Technologies Internship","source":"Happy Visitors","url":"https://www.happy-visitors.com/"},
+        {"img":"images/InfosysSpringboard Techniques for big data analytics.jpg","title":"Techniques for Big Data Analytics","source":"Infosys Springboard","url":"https://infyspringboard.onwingspan.com/"},
+        {"img":"images/LinkedIn CertificateOfCompletion_Programming Foundations Beyond the Fundamentals.jpg","title":"Programming Foundations: Beyond the Fundamentals","source":"LinkedIn","url":"https://www.linkedin.com/learning/certificates/7a9856f9e900d6544a1d8bc3108d1e228a14769ad7f09ff4c60e8aaf7177dfa9"}
+    ]
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/motion.js" defer></script>
+    <script src="js/github.js" defer></script>
+    <script src="js/leetcode.js" defer></script>
+    <script src="js/credentials.js" defer></script>
 </body>
 </html>

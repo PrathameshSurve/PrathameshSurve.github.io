@@ -1,0 +1,52 @@
+:root {
+  --color-bg: #09090b;
+  --color-bg-elevated: #0f0f12;
+  --color-surface: rgba(255, 255, 255, 0.03);
+  --color-surface-hover: rgba(255, 255, 255, 0.06);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-accent: rgba(99, 91, 255, 0.35);
+  --color-text: #fafafa;
+  --color-text-muted: #a1a1aa;
+  --color-text-subtle: #71717a;
+  --color-accent: #635bff;
+  --color-accent-hover: #7c75ff;
+  --color-accent-glow: rgba(99, 91, 255, 0.25);
+  --color-neon-blue: #0070f3;
+  --color-neon-cyan: #22d3ee;
+  --color-neon-purple: #a78bfa;
+  --color-neon-glow: rgba(34, 211, 238, 0.35);
+
+  --motion-y: 40px;
+  --motion-blur: 5px;
+  --motion-duration: 650ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --color-success: #22c55e;
+  --color-error: #ef4444;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --space-xs: 0.4rem;
+  --space-sm: 0.8rem;
+  --space-md: 1.6rem;
+  --space-lg: 2.4rem;
+  --space-xl: 4rem;
+  --space-2xl: 5rem;
+  --space-3xl: 6.4rem;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --container-max: 1140px;
+  --nav-height: 72px;
+
+  --transition-fast: 0.12s ease;
+  --transition-base: 0.18s ease;
+  --transition-slow: 0.22s ease-out;
+
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-blur: blur(20px);
+  --shadow-glow: 0 0 40px var(--color-accent-glow);
+}
