@@ -1,3 +1,8 @@
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const lenis = window.Lenis && !prefersReducedMotion
+  ? new window.Lenis({ autoRaf: true, lerp: 0.1, smoothWheel: true })
+  : null;
+
 /* Navigation */
 (function () {
   const nav = document.getElementById('nav');
@@ -10,12 +15,14 @@
     nav.classList.remove('is-open');
     toggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+    if (lenis) lenis.start();
   }
 
   toggle.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('is-open');
     toggle.setAttribute('aria-expanded', String(isOpen));
     document.body.style.overflow = isOpen ? 'hidden' : '';
+    if (lenis) isOpen ? lenis.stop() : lenis.start();
   });
 
   links.forEach((link) => {
@@ -31,7 +38,11 @@
     if (!el) return;
     const navHeight = nav.offsetHeight;
     const top = el.getBoundingClientRect().top + window.scrollY - navHeight;
-    window.scrollTo({ top, behavior: 'smooth' });
+    if (lenis) {
+      lenis.scrollTo(el, { offset: -navHeight });
+    } else {
+      window.scrollTo({ top, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+    }
   }
 
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -61,12 +72,16 @@
     scrollTicking = false;
   }
 
-  window.addEventListener('scroll', () => {
-    if (!scrollTicking) {
-      scrollTicking = true;
-      requestAnimationFrame(updateActiveLink);
-    }
-  }, { passive: true });
+  if (lenis) {
+    lenis.on('scroll', updateActiveLink);
+  } else {
+    window.addEventListener('scroll', () => {
+      if (!scrollTicking) {
+        scrollTicking = true;
+        requestAnimationFrame(updateActiveLink);
+      }
+    }, { passive: true });
+  }
   updateActiveLink();
 })();
 
@@ -199,10 +214,15 @@
     ticking = false;
   }
 
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      ticking = true;
-      requestAnimationFrame(updateParallax);
-    }
-  }, { passive: true });
+  if (lenis) {
+    lenis.on('scroll', updateParallax);
+  } else {
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(updateParallax);
+      }
+    }, { passive: true });
+  }
+  updateParallax();
 })();
