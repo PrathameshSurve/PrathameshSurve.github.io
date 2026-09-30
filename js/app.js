@@ -193,36 +193,3 @@ const lenis = window.Lenis && !prefersReducedMotion
       });
   });
 })();
-
-/* Subtle rAF parallax — hero only, desktop */
-(function () {
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  if (window.matchMedia('(max-width: 767px)').matches) return;
-
-  const hero = document.getElementById('hero');
-  const glow = document.querySelector('.hero__glow--1');
-  if (!hero || !glow) return;
-
-  let ticking = false;
-
-  function updateParallax() {
-    const rect = hero.getBoundingClientRect();
-    if (rect.bottom > 0 && rect.top < window.innerHeight) {
-      const offset = Math.min(window.scrollY * 0.03, 32);
-      glow.style.transform = `translate3d(0, ${offset}px, 0)`;
-    }
-    ticking = false;
-  }
-
-  if (lenis) {
-    lenis.on('scroll', updateParallax);
-  } else {
-    window.addEventListener('scroll', () => {
-      if (!ticking) {
-        ticking = true;
-        requestAnimationFrame(updateParallax);
-      }
-    }, { passive: true });
-  }
-  updateParallax();
-})();
